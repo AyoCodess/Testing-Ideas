@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/index.HASH_REF_018db93862fa12a059426423c5ebeb1d.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="nav ">
+    <ul>
+      <li class="nav__item"><a href="/index.html">Home</a></li>
+      <li class="nav__item"><a href="/About.html">About</a></li>
+      <li class="nav__item"><a href="/Login.html">Login</a></li>
+      <li class="nav__item"><a href="/Gallery.html">Gallery</a></li>
+    </ul>
+  </div>
+  <h1>Please Login</h1>
+  <div class="user">
+    <form action="#" method="POST">
+      First Name: <input type="text" name="firstName"><br>
+      Last Name: <input type="text" name="lastName"><br>
+     Address: <input type="text" name="address"><br>
+      Email: <input type="email" required="" name="email"><br>
+      Password: <input type="Password" name="Password" minlength="8"><br>
+      D.O.B: <input type="date" name="dob"><br><br>
+      Gender:<br> 
+      <input type="radio" name="Gender" value="male"> Male<br>
+      <input type="radio" name="Gender" value="female"> Female<br>
+      <input type="radio" name="Gender" value="other"> Other<br><br>
+      Pets: <br>
+     <input type="checkbox" name="Pets" value="cat"> Cat<br>
+      <input type="checkbox" name="Pets" value="dog"> Dogs<br><br>
+      Car Brand <br>
+      <select name="car" id="">
+        <option value="Audi">Audi</option>
+        <option value="bmw">BMW</option>
+        <option value="merc">Mercedes</option>
+      </select>
+ 
+      <input type="submit" value="Register">
+      <input type="reset">
+    </form>
+  </div>
+ 
+  <img src="https://i.imgur.com/bqAMGCx.jpg" alt="" class="ayo">
+ </body></html>
+ <!-- 
+ ?firstName=fee
+ &lastName=fefe
+ &address=feqfqefq
+ &email=qwdwqd%40fsff.com
+ &Password=wdwvdavdavadf
+ &dob=2021-04-02
+ &Gender=male
+ &Pets=on
+ &car=bmw# -->
+ 
+ 
+
+<script src="/Login.HASH_REF_a0eb550b56ef57cc5f134fb2b95569f7.js"></script>

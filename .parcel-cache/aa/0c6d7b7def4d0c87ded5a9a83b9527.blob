@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/index.HASH_REF_018db93862fa12a059426423c5ebeb1d.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="nav ">
+    <ul>
+      <li class="nav__item"><a href="/index.html">Home</a></li>
+      <li class="nav__item"><a href="/About.html">About</a></li>
+      <li class="nav__item"><a href="/Login.html">Login</a></li>
+    </ul>
+  </div>
+  <h1>About Page</h1>
+
+ <p class="margin-bottom-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem rem, tempora error ab delectus placeat alias voluptatum. Repudiandae corporis exercitationem explicabo laudantium excepturi. Et incidunt, facilis dolore nisi fugit consequatur ipsa. Sed vitae at amet temporibus nostrum dolorum porro dolorem adipisci! Animi saepe sapiente dicta obcaecati voluptate ad dolorem voluptatibus quo nisi eum iusto suscipit alias, illum sint cum recusandae, beatae nostrum corporis veniam repudiandae voluptas ipsam odit aliquam hic! Modi beatae neque rerum sapiente dolorem magni quod ipsa? Repellat ipsa nulla ratione quos deserunt pariatur iusto. Consequatur, exercitationem. Autem excepturi officia vel reprehenderit tenetur amet quaerat eius? Eum, deleniti!</p>
+</body>
+</html><script src="/About.HASH_REF_b0dce529c500f25798be3df8c1a40088.js"></script>
