@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="9164ad3dce4f711314e61814995354b1">
+    <title>Document</title>
+  </head>
+  <body>
+    hello
+
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium cumque reiciendis debitis accusamus doloribus sunt eveniet vero voluptatem. Laboriosam similique neque eos cumque! Quaerat quidem laborum quis soluta. Unde neque hic praesentium distinctio, repellendus voluptatibus sapiente necessitatibus a harum quae animi sunt cum laboriosam quibusdam ratione vitae deserunt? Omnis impedit doloremque modi eum ipsa voluptates asperiores illum, reprehenderit voluptate. Quam reiciendis repudiandae voluptatum numquam nemo in porro quidem nam sed qui molestiae quasi ullam corrupti pariatur corporis nobis illo tempore eligendi voluptas optio, explicabo natus sequi? Tempora temporibus qui odit suscipit impedit similique doloremque sequi aliquid, voluptatum magnam itaque.</h1>
+  </body>
+ <div class="con">
+   <ul>
+     <li class="nav">menu</li>
+     <li class="nav">menu</li>
+     <li class="nav">menu</li>
+     <li class="nav">menu</li>
+     <li class="nav">menu</li>
+   
+   </ul>
+ </div>
+
+ <div class="user">
+   <form action="#">
+     First Name: <input type="text"><br>
+     Last Name: <input type="text"><br>
+    Address: <input type="text"><br>
+     Email: <input type="email" required=""><br>
+     Password: <input type="Password"><br>
+     D.O.B: <input type="date"><br>
+     Gender:<br> 
+     <input type="radio" name="Gender">Male<br>
+     <input type="radio" name="Gender">Female<br>
+     <input type="radio" name="Gender">Other<br>
+     Pets: <br>
+    <input type="checkbox"> Cat<br>
+     <input type="checkbox">Dogs<br><br>
+     <input type="submit" value="Register">
+     <input type="reset">
+   </form>
+ </div>
+
+ <img src="9c60aed99520c61d6c5f81cd5a235e7e" alt="" class="ayo">
+</html>
+<script src="202f65accccb6071212b96a1d3c27081"></script>

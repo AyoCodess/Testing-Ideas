@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.HASH_REF_018db93862fa12a059426423c5ebeb1d.css">
+    <title>Document</title>
+  </head>
+  <body>
+    hello
+
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium cumque reiciendis debitis accusamus doloribus sunt eveniet vero voluptatem. Laboriosam similique neque eos cumque! Quaerat quidem laborum quis soluta. Unde neque hic praesentium distinctio, repellendus voluptatibus sapiente necessitatibus a harum quae animi sunt cum laboriosam quibusdam ratione vitae deserunt? Omnis impedit doloremque modi eum ipsa voluptates asperiores illum, reprehenderit voluptate. Quam reiciendis repudiandae voluptatum numquam nemo in porro quidem nam sed qui molestiae quasi ullam corrupti pariatur corporis nobis illo tempore eligendi voluptas optio, explicabo natus sequi? Tempora temporibus qui odit suscipit impedit similique doloremque sequi aliquid, voluptatum magnam itaque.</h1>
+  </body>
+ <div class="con">
+   <ul>
+     <li class="nav">menu</li>
+     <li class="nav">menu</li>
+     <li class="nav">menu</li>
+     <li class="nav">menu</li>
+     <li class="nav">menu</li>
+   
+   </ul>
+ </div>
+
+ <div class="user">
+   <form action="#" method="GET">
+     First Name: <input type="text" name="firstName"><br>
+     Last Name: <input type="text" name="lastName"><br>
+    Address: <input type="text" name="address"><br>
+     Email: <input type="email" required="" name="email"><br>
+     Password: <input type="Password" name="Password" minlength="8"><br>
+     D.O.B: <input type="date" name="dob"><br><br>
+     Gender:<br> 
+     <input type="radio" name="Gender" value="male"> Male<br>
+     <input type="radio" name="Gender" value="female"> Female<br>
+     <input type="radio" name="Gender" value="other"> Other<br><br>
+     Pets: <br>
+    <input type="checkbox" name="Pets"> Cat<br>
+     <input type="checkbox" name="Pets"> Dogs<br><br>
+     Car Brand <br>
+     <select name="car" id="">
+       <option value="Audi">Audi</option>
+       <option value="bmw">BMW</option>
+       <option value="merc">Mercedes</option>
+     </select>
+
+     <input type="submit" value="Register">
+     <input type="reset">
+   </form>
+ </div>
+
+ <img src="https://i.imgur.com/bqAMGCx.jpg" alt="" class="ayo">
+</html>
+
+
+
+<script src="/index.HASH_REF_1cf92b8ac789bf0c8bd4b6d53ebff041.js"></script>

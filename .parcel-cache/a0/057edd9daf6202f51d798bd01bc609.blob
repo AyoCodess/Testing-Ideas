@@ -1,0 +1,44 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 10rem;
+  font-size: 1.5rem;
+  background-color: white;
+  color: white;
+  background-image: linear-gradient(150deg, rgba(255, 255, 255, 0.05), rgba(144, 238, 144, 0.5)), url("/img/IMG_0367.JPG");
+  background-size: cover;
+}
+
+h1 {
+  border: 5px dashed green;
+  text-align: center;
+}
+
+.nav:first-child {
+  margin-top: 10rem;
+}
+
+.ayo {
+  width: 10rem;
+  height: 10rem;
+}
+
+.con {
+  margin: 10rem;
+}
+
+.user {
+  font-size: 3rem;
+}
