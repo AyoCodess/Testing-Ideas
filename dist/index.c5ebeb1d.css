@@ -13,8 +13,8 @@ html {
 }
 
 body {
-  margin: 10rem;
-  font-family: lato, sans-serif;
+  margin: 3rem;
+  font-family: fantasy, sans-serif;
   font-weight: 500;
   font-size: 1.7rem;
   background-color: white;
@@ -32,13 +32,14 @@ body {
 }
 
 h1 {
-  border: 10px solid green;
+  border-bottom: 10px solid green;
   text-align: center;
-  font-size: 10rem;
+  font-size: 5rem;
   color: darkcyan;
 }
 
 .nav {
+  text-align: center;
   margin-top: 0rem;
   margin-bottom: 3rem;
   list-style: none;
@@ -46,7 +47,7 @@ h1 {
 .nav__item {
   display: inline-block;
   color: green;
-  font-size: 3rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 .nav a {
@@ -78,5 +79,15 @@ h1 {
 
 .pic1 {
   width: 50%;
+}
+
+.img__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.img__container img {
+  width: 50rem;
+  height: 30rem;
 }
 /*# sourceMappingURL=index.c5ebeb1d.css.map */

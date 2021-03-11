@@ -1,3 +1,5 @@
+/// RESET
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -12,9 +14,11 @@ html {
     box-sizing: inherit;
 }
 
+/// GLOBAL STYLES
+
 body {
-    margin: 10rem;
-    font-family: lato, sans-serif;
+    margin: 3rem;
+    font-family: fantasy, sans-serif;
     font-weight: 500;
     font-size: 1.7rem;
     background-color: white;
@@ -28,6 +32,8 @@ body {
     );
 }
 
+/// UTILITY
+
 .margin-bottom {
     margin-bottom: 5rem;
 }
@@ -35,14 +41,18 @@ body {
     margin-bottom: 2.5rem;
 }
 
+/// STYLES
+
 h1 {
-    border: 10px solid green;
+    border-bottom: 10px solid green;
     text-align: center;
-    font-size: 10rem;
+    font-size: 5rem;
     color: darkcyan;
 }
 
+/// NAVIGATION
 .nav {
+    text-align: center;
     margin-top: 0rem;
     margin-bottom: 3rem;
     list-style: none;
@@ -50,7 +60,7 @@ h1 {
     &__item {
         display: inline-block;
         color: green;
-        font-size: 3rem;
+        font-size: 2rem;
         cursor: pointer;
     }
 
@@ -72,6 +82,8 @@ h1 {
     }
 }
 
+/// HOME
+
 .ayo {
     width: 10rem;
     height: 10rem;
@@ -87,4 +99,21 @@ h1 {
 
 .pic1 {
     width: 50%;
+}
+
+/// GALLERY
+
+.img {
+    // .img__container
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        img {
+            width: 50rem;
+            height: 30rem;
+        }
+    }
 }

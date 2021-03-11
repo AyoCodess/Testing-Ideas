@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="3a69dd65f548e20b58c690a2e8af0a8f">
+  <title>Document</title>
+</head>
+<body>
+
+  
+  <div class="nav ">
+    <ul>
+      <li class="nav__item"><a href="3093ce38bd1d7f846335993c69dcbc85">Home</a></li>
+      <li class="nav__item"><a href="ea478876ce6a3ec05859c90b9f75efc3">About</a></li>
+      <li class="nav__item"><a href="6f5c53eb34db1892c97141a7b4e2b18f">Login</a></li>
+      <li class="nav__item"><a href="93228e32e2a867730cd3c2de562b1d7c">Gallery</a></li>
+    </ul>
+  </div>
+  
+  <h1 class="">Life in the wild</h1>
+
+
+</body>
+</html><script src="98055c5d922c14861864cc7a714954ec"></script>
