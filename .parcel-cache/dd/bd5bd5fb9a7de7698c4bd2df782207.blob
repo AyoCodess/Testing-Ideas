@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="d342a24492e4d07efad50a701a61f04a">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="nav ">
+      <ul>
+        <li class="nav__item"><a href="8c6285b3a9db481eac4646aab24ff1a9">Home</a></li>
+        <li class="nav__item"><a href="5a26b34801afd0703c13e02e3c585a6e">About</a></li>
+        <li class="nav__item"><a href="9fb3613374f399a05df8ef5b773c9cce">Login</a></li>
+      </ul>
+    </div>
+
+
+    <h1 class="margin-bottom">Demo Webpage</h1>
+
+    <h2 class="margin-bottom-small">Hello World</h2>
+
+    <p class="margin-bottom-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium cumque reiciendis debitis accusamus doloribus sunt eveniet vero voluptatem. Laboriosam similique neque eos cumque! Quaerat quidem laborum quis soluta. Unde neque hic praesentium distinctio, repellendus voluptatibus sapiente necessitatibus a harum quae animi sunt cum laboriosam quibusdam ratione vitae deserunt? Omnis impedit doloremque modi eum ipsa voluptates asperiores illum, reprehenderit voluptate. Quam reiciendis repudiandae voluptatum numquam nemo in porro quidem nam sed qui molestiae quasi ullam corrupti pariatur corporis nobis illo tempore eligendi voluptas optio, explicabo natus sequi? Tempora temporibus qui odit suscipit impedit similique doloremque sequi aliquid, voluptatum magnam itaque.</p>
+
+    <h2 class="margin-bottom-small">What we do</h2>
+
+
+    <p class="margin-bottom-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium cumque reiciendis debs sapiente necessitatibus a harum quae animi sunt cum labor in porro quidem nam sed qui molestiae quasi ullam corrupti pariatur corporis nobis illo tempore eligendi voluptas optio, explicabo natus sequi? Tempora temporibus qui odit suscipit impedit similique doloremque sequi aliquid, voluptatum magnam itaque.</p>
+
+    <h2 class="margin-bottom-small">How we can help you</h2>
+
+
+    <p class="margin-bottom-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium cumque reiciendis debitis accusamus doloribus sunt eveniet vero voluptatem. Laboriosam similique neque eos cumque!</p>
+  </body>
+ 
+
+</html>

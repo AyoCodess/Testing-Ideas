@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="2b7d2b1a19a07e7ef0dec3041041bb40">
+  <title>Document</title>
+</head>
+<body>
+  <div class="nav ">
+    <ul>
+      <li class="nav__item"><a href="53c49937f07cd4165dca2d0fea828ddc">Home</a></li>
+      <li class="nav__item"><a href="441ea45d6d50f567e98086970622b9dd">About</a></li>
+      <li class="nav__item"><a href="63659d08b3cc1a74e859ba4302c302ad">Login</a></li>
+    </ul>
+  </div>
+  <h1>About Page</h1>
+</body>
+</html>
