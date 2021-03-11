@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="4e4727bf698c780e9eee3fc8c9fc7874">
+  <title>Document</title>
+</head>
+<body>
+
+  
+  <div class="nav ">
+    <ul>
+      <li class="nav__item"><a href="59ff4e4480812f150fbf8526e71716f7">Home</a></li>
+      <li class="nav__item"><a href="d7cf641c7a585e2c8a0c67f82a9be7d3">About</a></li>
+      <li class="nav__item"><a href="038133f84a9a3ffb7ac709fd31e15ce3">Login</a></li>
+      <li class="nav__item"><a href="ee8c296dc594a7574328d36db47ee6fb">Gallery</a></li>
+    </ul>
+  </div>
+  
+  <h1 class="margin-bottom">Life in the wild</h1>
+
+  <div class="img__container">
+    <img src="3fa1a1092a9367d6f51600c3adbd8cb5" alt="">
+    <img src="c8a5414a2c38803f78c83cd578c861cf" alt="">
+    <img src="b2a890cd645f8b0a486e5baabadef50e" alt="">
+    <img src="7e943cf27da2e602f16672d2e0a26ed3" alt="">
+    <img src="c39e2c2541b70305495648beca0f596c" alt="">
+    <img src="7b450688e6ea51f4cdc67e3be03f927c" alt="">
+  </div>
+
+
+</body>
+</html>

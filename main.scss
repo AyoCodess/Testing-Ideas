@@ -18,7 +18,7 @@ html {
 
 body {
     margin: 3rem;
-    font-family: fantasy, sans-serif;
+    font-family: lato, sans-serif;
     font-weight: 500;
     font-size: 1.7rem;
     background-color: white;
@@ -60,7 +60,7 @@ h1 {
     &__item {
         display: inline-block;
         color: green;
-        font-size: 2rem;
+        font-size: 1.5rem;
         cursor: pointer;
     }
 
@@ -112,8 +112,9 @@ h1 {
         justify-content: center;
 
         img {
-            width: 50rem;
-            height: 30rem;
+            max-width: 50rem;
+            max-height: 20rem;
+            object-fit: cover;
         }
     }
 }

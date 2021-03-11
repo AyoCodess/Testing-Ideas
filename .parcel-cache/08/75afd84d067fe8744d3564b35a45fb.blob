@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="2b7d2b1a19a07e7ef0dec3041041bb40">
+  <title>Document</title>
+</head>
+<body>
+  <div class="nav ">
+    <ul>
+      <li class="nav__item"><a href="53c49937f07cd4165dca2d0fea828ddc">Home</a></li>
+      <li class="nav__item"><a href="441ea45d6d50f567e98086970622b9dd">About</a></li>
+      <li class="nav__item"><a href="63659d08b3cc1a74e859ba4302c302ad">Login</a></li>
+      <li class="nav__item"><a href="db179659eb9a7974d761ae26c30c8998">Gallery</a></li>
+    </ul>
+  </div>
+  <h1 class="margin-bottom-small">About Page</h1>
+
+ <p class="margin-bottom-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem rem, tempora error ab delectus placeat alias voluptatum. Repudiandae corporis exercitationem explicabo laudantium excepturi. Et incidunt, facilis dolore nisi fugit consequatur ipsa. Sed vitae at amet temporibus nostrum dolorum porro dolorem adipisci! Animi saepe sapiente dicta obcaecati voluptate ad dolorem voluptatibus quo nisi eum iusto suscipit alias, illum sint cum recusandae, beatae nostrum corporis veniam repudiandae voluptas ipsam odit aliquam hic! Modi beatae neque rerum sapiente dolorem magni quod ipsa? Repellat ipsa nulla ratione quos deserunt pariatur iusto. Consequatur, exercitationem. Autem excepturi officia vel reprehenderit tenetur amet quaerat eius? Eum, deleniti!</p>
+
+ <img class="pic1" src="4596f64fad6c43c7988edb929640d75d" alt="pic">
+</body>
+</html>
