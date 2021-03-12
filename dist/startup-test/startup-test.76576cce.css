@@ -16,10 +16,12 @@ html {
   height: 100vh;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
+  background-color: darkgray;
 }
 
 body {
-  background-image: linear-gradient(150deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2)), url(../header.e277cb26.jpg);
+  height: 100vh;
+  background-image: linear-gradient(150deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2)), url(../header.d51d92c0.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
