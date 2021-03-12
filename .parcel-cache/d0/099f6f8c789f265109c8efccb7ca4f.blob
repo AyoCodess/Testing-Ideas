@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/startup-test/startup-test.HASH_REF_078478926f8f052a1a5ef6fe76576cce.css">
+  </head>
+  <body>
+
+<div class="heading">
+  <h1>The Biggest Crypto Event is upon us</h1>
+</div>
+
+<button>Find Out More</button>
+
+  </body>
+</html>
+<script src="/startup-test/startup-test.HASH_REF_c9f5cabf1664f26c45feb74f9cf7bc87.js"></script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="3a69dd65f548e20b58c690a2e8af0a8f">
+  <title>Document</title>
+</head>
+<body>
+
+  
+
+  <div class="nav ">
+    <ul>
+      <li class="nav__item"><a href="3093ce38bd1d7f846335993c69dcbc85">Home</a></li>
+      <li class="nav__item"><a href="ea478876ce6a3ec05859c90b9f75efc3">About</a></li>
+      <li class="nav__item"><a href="6f5c53eb34db1892c97141a7b4e2b18f">Login</a></li>
+      <li class="nav__item"><a href="93228e32e2a867730cd3c2de562b1d7c">Gallery</a></li>
+      <li class="nav__item"><a href="a78d544612fb509f2d7dc38563f1a9ca">Robot</a></li>
+      <li class="nav__item"><a href="078b593422fa9fac7ce51dc29d50ea86">Bootstrap</a></li>
+      <li class="nav__item"><a href="0908924532e3e5af2c04819eea0d502f">Startup</a></li>
+    </ul>
+  </div>
+  
+  <h1 class="margin-bottom">Life in the wild</h1>
+
+  <div class="img__container">
+    <img src="759994f7214d9e7f41d9384814b2e5fe" alt="">
+    <img src="6fbe29ea1a37867193fca8b686497506" alt="">
+    <img src="c1e4499f0c55754ea81f14e662acc3c4" alt="">
+    <img src="0e9af201059b72a5eb396c0815cec638" alt="">
+    <img src="35c6cca265a12b1703c054047f260633" alt="">
+    <img src="2776ba73ba973671d6ca237d0bab4287" alt="">
+  </div>
+
+
+</body>
+</html><script src="98055c5d922c14861864cc7a714954ec"></script>

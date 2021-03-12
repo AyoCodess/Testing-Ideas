@@ -1,0 +1,7 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+/*# sourceMappingURL=startup-test.HASH_REF_078478926f8f052a1a5ef6fe76576cce.css.map */

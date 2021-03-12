@@ -1,0 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+h1 .display-4 {
+  font-size: 133px;
+}
+
+.btn {
+  border-radius: 500px;
+}
+/*# sourceMappingURL=bootstrap.HASH_REF_1d45cabe5a724278d3af737301a0a4bf.css.map */

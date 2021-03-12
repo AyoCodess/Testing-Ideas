@@ -8,11 +8,43 @@ body {
     min-height: 100vh;
 }
 
+/// NAVIGATION
+.nav {
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+    list-style: none;
+    font-family: roboto;
+
+    &__item {
+        display: inline-block;
+        color: green;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link,
+    a:visited {
+        color: green;
+    }
+
+    a:hover {
+        color: red;
+    }
+
+    &__item:not(:first-child) {
+        margin-left: 1rem;
+    }
+}
 .container-robot {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 70vh;
 }
 
 h1 {

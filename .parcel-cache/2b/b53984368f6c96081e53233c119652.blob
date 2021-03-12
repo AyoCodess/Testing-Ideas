@@ -1,0 +1,43 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+body {
+  background-image: linear-gradient(150deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2)), url(../header.HASH_REF_f4a319a9e5d8b2e1a8dd5a4de277cb26.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container-startup {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  padding: 10rem 0.5rem 5rem;
+}
+
+.heading__title {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+/*# sourceMappingURL=startup-test.HASH_REF_078478926f8f052a1a5ef6fe76576cce.css.map */

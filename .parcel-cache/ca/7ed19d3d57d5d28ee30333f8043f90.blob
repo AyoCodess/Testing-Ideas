@@ -1,0 +1,24 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+body {
+  background: url(851283c0c5f9bc5f98d81e70f2ed1f7b) center center fixed;
+  background-size: cover;
+}

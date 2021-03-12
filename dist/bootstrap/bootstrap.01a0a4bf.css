@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.btn {
+  border-radius: 500px;
+}
+/*# sourceMappingURL=bootstrap.01a0a4bf.css.map */
