@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="70e1bc6e66909355533b2e35b5839944" rel="stylesheet">
+
+  
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="63f1591eaefbf49fe1a7165dfa6f5609" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="44a3bd376af980ac74605724039f7ced">
+  </head>
+  <body>
+
+<div class="container-startup">
+  <div class="heading">
+    <h1 class="heading__title">The biggest crypto event in 2021 is upon us</h1>
+  </div>
+  
+  <div class="btn__container"><button class="heading__button btn btn-danger">Find Out More</button></div>
+</div>
+
+  </body>
+</html>
+<script src="29b6a5e8850430647d89635bf219c3a3"></script>

@@ -1,0 +1,14 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/*# sourceMappingURL=startup-test.HASH_REF_f2db04608a42db7ccb445481f3502865.css.map */
