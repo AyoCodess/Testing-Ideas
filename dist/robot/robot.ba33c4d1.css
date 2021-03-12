@@ -7,12 +7,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100vh;
 }
 
 h1 {
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: #5f93e8;
+  margin-top: 5rem;
+  font-size: 3rem;
 }
 
 .robots {
