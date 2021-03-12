@@ -90,5 +90,11 @@ h1 {
   max-width: 50rem;
   max-height: 20rem;
   object-fit: cover;
+  transition: all 0.5s;
+  margin: 1rem;
+  box-shadow: 0 1rem 5rem rgba(0, 128, 0, 0.3);
+}
+.img__container img:hover {
+  transform: scale(1.1);
 }
 /*# sourceMappingURL=index.c5ebeb1d.css.map */
