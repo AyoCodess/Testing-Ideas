@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Robot Page</title>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="c2313edee17e10522af75cd9a0bc0c35">
+	<link href="62a1199fe41b82b55b1a699f85c79a74" rel="stylesheet">
+</head>
+<body>
+
+	<div class="nav ">
+		<ul>
+			<li class="nav__item"><a href="d674598a032509395b2224edda416465">Home</a></li>
+			<li class="nav__item"><a href="454037ff4a3ebc8e8403873c89304a24">About</a></li>
+			<li class="nav__item"><a href="b751dc3d64301403dd5453ca7febf68e">Login</a></li>
+			<li class="nav__item"><a href="831e7147b7fab03adcdaf6d0a4ceb32f">Gallery</a></li>
+			<li class="nav__item"><a href="84530958bcfd5518e61fba41b9fd8c67">Robot</a></li>
+		</ul>
+	</div>
+	
+		<h1>Robot Friend Desktop Only Animation</h1>
+		<div class="container-robot">
+		<div class="robots">
+			<div class="android">
+				<div class="head">
+					<div class="eyes">
+						<div class="left_eye"></div>
+						<div class="right_eye"></div>
+					</div>
+				</div>
+				<div class="upper_body">
+					<div class="left_arm"></div>
+					<div class="torso"></div>
+					<div class="right_arm"></div>
+				</div>
+				<div class="lower_body">
+					<div class="left_leg"></div>
+					<div class="right_leg"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
