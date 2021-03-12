@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/index.HASH_REF_018db93862fa12a059426423c5ebeb1d.css">
+  <title>Document</title>
+</head>
+<body>
+
+  
+
+  <div class="nav ">
+    <ul>
+      <li class="nav__item"><a href="/index.html">Home</a></li>
+      <li class="nav__item"><a href="/About.html">About</a></li>
+      <li class="nav__item"><a href="/Login.html">Login</a></li>
+      <li class="nav__item"><a href="/Gallery.html">Gallery</a></li>
+      <li class="nav__item"><a href="/robot/robot.html">Robot</a></li>
+      <li class="nav__item"><a href="/bootstrap/bootstrap.html">Bootstrap</a></li>
+      <li class="nav__item"><a href="/startup-test/startup-test.html">Startup</a></li>
+    </ul>
+  </div>
+  
+  <h1 class="margin-bottom">Life in the wild</h1>
+
+  <div class="img__container">
+    <img src="/elephant-cub-tsavo-kenya-66898.HASH_REF_ccb73681c1103c2cf43ad59007415950.jpeg" alt="">
+    <img src="/horse-herd-fog-nature-52500.HASH_REF_7079da5951829647e5f6ea8687637d4d.jpeg" alt="">
+    <img src="/ibis-bird-red-animals-158471.HASH_REF_8a8d8fd4745e730598d3c8a3e407ce75.jpeg" alt="">
+    <img src="/lion2.HASH_REF_a76b0f28c21755ee9d3c7f9f0d525053.jpeg" alt="">
+    <img src="/pexels-photo-133459.HASH_REF_4e107b64c50858cf24d38e9bdbe49805.jpeg" alt="">
+    <img src="/pexels-photo-213399.HASH_REF_cf849ae2b6b88eb5561595cff4f575fa.jpeg" alt="">
+  </div>
+
+
+</body>
+</html><script src="/Gallery.HASH_REF_e70f025d4f3507f2aa7ad0b4883407cf.js"></script>
