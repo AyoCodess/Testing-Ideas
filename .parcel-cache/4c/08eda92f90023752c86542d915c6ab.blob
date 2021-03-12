@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="2f64830d53592e9416a56a4bceabdde8" rel="stylesheet">
+
+  
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="98cd0c785798992171db70367775be49" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="6b0a93fe10363a4270f9d4a9ed86d0a6">
+  </head>
+  <body>
+
+    <div class="nav-1 ">
+      <ul class="nav-1 ">
+        <li class="nav__item-1"><a href="36f2b2b98919401b5e6e5285ef1c3cbb">Home</a></li>
+        <li class="nav__item-1"><a href="de16ed8baeb08a9e82127a3dc6b83038">About</a></li>
+        <li class="nav__item-1"><a href="25b7d9c2750ba3058d81927b15e14749">Login</a></li>
+        <li class="nav__item-1"><a href="db698549d2820528ef945e9bd8112352">Gallery</a></li>
+        <li class="nav__item-1"><a href="edae345245764e20110d77bffcbdf315">Robot</a></li>
+        <li class="nav__item-1"><a href="6e6594fbd0e94863823ea862a879dfcd">Bootstrap</a></li>
+        <li class="nav__item-1"><a href="12e996431762c094850c36c26511b3fc">Startup</a></li>
+      </ul>
+    </div>
+  
+<div class="container-startup">
+  <div class="heading">
+    <h1 class="heading__title">The biggest crypto event in 2021 is upon us</h1>
+  </div>
+  
+  <div class="btn__container">
+    <a href="355ad72217ca61ece61d1782fa6d2259">
+    <button class="heading__button btn btn-danger">Find Out More</button></a></div></div>
+
+
+  </body>
+</html>
