@@ -1,0 +1,12 @@
+"use strict";
+
+console.log(`hello world`);
+console.log(`hey`);
+
+console.log(3 + 4);
+
+console.log(3 === 3);
+
+const hello = "i am going home";
+
+console.log(hello);

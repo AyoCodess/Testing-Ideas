@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="9164ad3dce4f711314e61814995354b1">
+
+        <link rel="preconnect" href="4a8a00904bae35c1104942c334d95ef2">
+        <link rel="preconnect" href="4a8a00904bae35c1104942c334d95ef2">
+        <link href="1151dfa8beef5a0de9be6bc6cfeed70c" rel="stylesheet">
+
+        <script defer="" src="d6d0b5035877608f130d77a48d6714c0"></script>
+
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li class="nav__item"><a href="586c5711ea42cb03e8e5207df156dae5">Home</a></li>
+                <li class="nav__item"><a href="492051d5382e38746d2dfd41f5320f66">About</a></li>
+                <li class="nav__item"><a href="b75d477e9511aeff47951ed864ea6deb">Login</a></li>
+                <li class="nav__item"><a href="f460866abe12a28da9739e83dd89b9d2">Gallery</a></li>
+                <li class="nav__item"><a href="e6494600c022457e75616d11390fd05a">Robot</a></li>
+                <li class="nav__item">
+                    <a href="097a44dae50e695992c3b2bb3cfd0acb">Bootstrap</a>
+                </li>
+                <li class="nav__item">
+                    <a href="369da453f86a5afb88d69afba8cad27f">Startup</a>
+                </li>
+                <li class="nav__item-1">
+                    <a href="490328e3ed4f6e3d36d7339f2d252baf">Grid Mock</a>
+                </li>
+            </ul>
+        </div>
+
+        <h1 class="margin-bottom">Demo Webpage</h1>
+
+        <div class="btncon"><button class="test">Click Me</button></div>
+        <br>
+        <br>
+
+        <h2 class="margin-bottom-small">Hello World</h2>
+
+        <p class="margin-bottom-small">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+            praesentium cumque reiciendis debitis accusamus doloribus sunt
+            eveniet vero voluptatem. Laboriosam similique neque eos cumque!
+            Quaerat quidem laborum quis soluta. Unde neque hic praesentium
+            distinctio, repellendus voluptatibus sapiente necessitatibus a harum
+            quae animi sunt cum laboriosam quibusdam ratione vitae deserunt?
+            Omnis impedit doloremque modi eum ipsa voluptates asperiores illum,
+            reprehenderit voluptate. Quam reiciendis repudiandae voluptatum
+            numquam nemo in porro quidem nam sed qui molestiae quasi ullam
+            corrupti pariatur corporis nobis illo tempore eligendi voluptas
+            optio, explicabo natus sequi? Tempora temporibus qui odit suscipit
+            impedit similique doloremque sequi aliquid, voluptatum magnam
+            itaque.
+        </p>
+
+        <h2 class="margin-bottom-small">What we do</h2>
+
+        <p class="margin-bottom-small">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+            praesentium cumque reiciendis debs sapiente necessitatibus a harum
+            quae animi sunt cum labor in porro quidem nam sed qui molestiae
+            quasi ullam corrupti pariatur corporis nobis illo tempore eligendi
+            voluptas optio, explicabo natus sequi? Tempora temporibus qui odit
+            suscipit impedit similique doloremque sequi aliquid, voluptatum
+            magnam itaque.
+        </p>
+
+        <h2 class="margin-bottom-small">How we can help you</h2>
+
+        <p class="margin-bottom-small">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+            praesentium cumque reiciendis debitis accusamus doloribus sunt
+            eveniet vero voluptatem. Laboriosam similique neque eos cumque!
+        </p>
+    </body>
+</html>

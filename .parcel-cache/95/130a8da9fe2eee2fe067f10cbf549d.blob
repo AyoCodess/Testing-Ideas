@@ -1,0 +1,3 @@
+"use strict";
+
+prompt(`how old are you?`);

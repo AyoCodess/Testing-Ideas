@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- the below meta tag is default in most modern browsers. however if you have an
+  older browser, the emojis may not show up properly. In which case you need this meta
+  tag. Read more here: https://teamtreehouse.com/community/meta-charsetutf8-what-does-this-mean-or-what-does-it-do-i-deleted-it-from-the-code-and-nothing-changed -->
+        <meta charset="utf-8">
+        <title>Grid Master</title>
+        <link rel="stylesheet" type="text/css" href="017c1930bc17badaf3c29fa3b9d2c761">
+    </head>
+    <body>
+        <div class="nav-1">
+            <ul class="nav-1">
+                <li class="nav__item-1"><a href="e2aeea61ebe388ec16510350fe5d3bf0">Home</a></li>
+                <li class="nav__item-1"><a href="7f0c9834ea4ba54024159c48e03b79fc">About</a></li>
+                <li class="nav__item-1"><a href="a0b3876f2dba53da763f7e23291e1e44">Login</a></li>
+                <li class="nav__item-1"><a href="766d22702815810b9a1c651d83273ff7">Gallery</a></li>
+                <li class="nav__item-1">
+                    <a href="bc5e94951dd7834cb3579a5390a8e26b">Robot</a>
+                </li>
+                <li class="nav__item-1">
+                    <a href="6ee8699391ec6e6c51d833e8251db4e3">Bootstrap</a>
+                </li>
+                <li class="nav__item-1">
+                    <a href="e43d983c8a1a5b841aae906f7eb248f6">Startup</a>
+                </li>
+                <li class="nav__item-1">
+                    <a href="baf2c39adc42e03b9778c9c9133c7ffa">Grid Mock</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="zone green">🦊</div>
+        <div class="zone red">🐰</div>
+        <div class="zone blue">🐸</div>
+        <div class="zone yellow">🦁</div>
+        <div class="zone purple">🐯</div>
+        <div class="zone brown">🐭</div>
+        <div class="zone green">🦄</div>
+        <div class="zone red">🐲</div>
+        <div class="zone blue">🐷</div>
+        <div class="zone yellow">🐺</div>
+        <div class="zone purple">🐼</div>
+        <div class="zone brown">🐻</div>
+    </body>
+</html>
+<script src="56b92f8a4070cb382410a024c1d8489d"></script>

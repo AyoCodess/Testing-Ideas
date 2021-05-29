@@ -1,0 +1,197 @@
+"use strict";
+
+function sing(song, song2) {
+    console.log(song);
+    console.log(song2);
+}
+
+sing(`llalalala`, `dfjdfjdjfjd`);
+
+function times(a, b) {
+    const sum = a * b;
+    console.log(sum);
+    return sum;
+}
+
+const news = times(11, 2);
+
+function total() {
+    console.log(news + 100);
+    return news + 100;
+}
+
+// alert(total());
+
+const game = function (a, b) {
+    console.log(a, b);
+};
+
+game(`ayo`, `olanide`);
+
+const sum2 = (a, b) => {
+    console.log(a + b);
+};
+
+sum2(1, 1);
+
+const name = (a, b) => {
+    console.log(`ayo`);
+};
+
+name();
+
+const name2 = function (a, b) {
+    console.log(`fumi`);
+};
+
+name2();
+
+let list = [`ayo`, `name`, `fumi`, `game`];
+
+console.log(list[3]);
+
+console.log(list);
+
+list.shift();
+console.log(list);
+
+list.pop();
+console.log(list);
+list.push(`drake`);
+console.log(list);
+
+const map = list.concat([`dam`, `dear`, `miz`, `got`]);
+
+console.log(list);
+
+console.log(map);
+
+const app = map.sort();
+
+console.log(app);
+
+let user = {
+    name: `ayo`,
+    dob: `september`,
+    car: `tesla`,
+    age: 30,
+    spells: [`ice`, `fire`, `wind`, `air`],
+};
+
+console.log(user);
+
+console.log(user.age);
+
+user.age = 21;
+
+console.log(user.age);
+
+console.log(user.spells[1]);
+
+let users = [
+    {
+        username: `amy`,
+        password: `map`,
+    },
+
+    {
+        username: `mac`,
+        password: `deep`,
+    },
+
+    {
+        username: `kev`,
+        password: `deep`,
+    },
+
+    {
+        username: `tim`,
+        password: `deep`,
+    },
+
+    {
+        username: `jean`,
+        password: `deep`,
+    },
+];
+
+let newsFeed = [
+    {
+        username: `jean`,
+        timeline: `hey man im tired`,
+    },
+
+    {
+        username: `pat`,
+        timeline: `i love bitcoin!`,
+    },
+];
+
+// let userNamePrompt = prompt(`what is your user name`);
+// let password = prompt(`what is your password`);
+
+// const signIn = function (user, password) {};
+// // if (user === users[0].username && password === users[0].password) {
+// //     console.log(`Feed: ${newsFeed[0].timeline}`);
+// //     console.log(`Feed: ${newsFeed[1].timeline}`);
+// // } else {
+// //     alert(`wrong credentials, try again`);
+// // }
+
+// signIn(userNamePrompt, password);
+
+// console.log(`---------`);
+
+// let todo = [`eat`, `sleep`, `clean`, `get food`, `drive`];
+
+// for (let c = 0; c < todo.length; c++) {
+//     console.log(todo[c]);
+// }
+
+// let count = 11;
+// while (count > 1) {
+//     count--;
+//     console.log(count);
+
+// todo.forEach(function (todo, i) {
+//     console.log(todo, i);
+// });
+
+const button = document.querySelector(".test");
+const but = document.querySelector(".btncon");
+const userInput = document.querySelector(".input");
+const lists = document.querySelector(".main");
+
+const greaterThan0 = function () {
+    return userInput.value.length;
+};
+
+const createElementList = function () {
+    let title = document.createElement("h3");
+    title.appendChild(document.createTextNode(userInput.value));
+    lists.appendChild(title);
+    userInput.value = "";
+};
+
+const clickEvent = function () {
+    if (greaterThan0() > 0) {
+        createElementList();
+        console.log(`hey`);
+    }
+};
+
+const enterPressed = function () {};
+
+button.addEventListener("click", clickEvent());
+
+// button.addEventListener("click", function () {
+//     if (greaterThan0()) {
+//         createElementList();
+//     }
+// });
+
+but.addEventListener("keydown", function (event) {
+    if (greaterThan0() && event.code === "Enter") {
+        createElementList();
+    }
+});

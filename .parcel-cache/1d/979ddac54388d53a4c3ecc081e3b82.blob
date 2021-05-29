@@ -1,0 +1,1511 @@
+// modules are defined as an array
+// [ module function, map of requires ]
+//
+// map of requires is short require name -> numeric require
+//
+// anything defined in a previous bundle is accessed via the
+// orig method which is the require for previous bundles
+
+(function(modules, entry, mainEntry, parcelRequireName, globalName) {
+  /* eslint-disable no-undef */
+  var globalObject =
+    typeof globalThis !== 'undefined'
+      ? globalThis
+      : typeof self !== 'undefined'
+      ? self
+      : typeof window !== 'undefined'
+      ? window
+      : typeof global !== 'undefined'
+      ? global
+      : {};
+  /* eslint-enable no-undef */
+
+  // Save the require from previous bundle to this closure if any
+  var previousRequire =
+    typeof globalObject[parcelRequireName] === 'function' &&
+    globalObject[parcelRequireName];
+
+  var cache = previousRequire.cache || {};
+  // Do not use `require` to prevent Webpack from trying to bundle this call
+  var nodeRequire =
+    typeof module !== 'undefined' &&
+    typeof module.require === 'function' &&
+    module.require.bind(module);
+
+  function newRequire(name, jumped) {
+    if (!cache[name]) {
+      if (!modules[name]) {
+        // if we cannot find the module within our internal map or
+        // cache jump to the current global require ie. the last bundle
+        // that was added to the page.
+        var currentRequire =
+          typeof globalObject[parcelRequireName] === 'function' &&
+          globalObject[parcelRequireName];
+        if (!jumped && currentRequire) {
+          return currentRequire(name, true);
+        }
+
+        // If there are other bundles on this page the require from the
+        // previous one is saved to 'previousRequire'. Repeat this as
+        // many times as there are bundles until the module is found or
+        // we exhaust the require chain.
+        if (previousRequire) {
+          return previousRequire(name, true);
+        }
+
+        // Try the node require function if it exists.
+        if (nodeRequire && typeof name === 'string') {
+          return nodeRequire(name);
+        }
+
+        var err = new Error("Cannot find module '" + name + "'");
+        err.code = 'MODULE_NOT_FOUND';
+        throw err;
+      }
+
+      localRequire.resolve = resolve;
+      localRequire.cache = {};
+
+      var module = (cache[name] = new newRequire.Module(name));
+
+      modules[name][0].call(
+        module.exports,
+        localRequire,
+        module,
+        module.exports,
+        this
+      );
+    }
+
+    return cache[name].exports;
+
+    function localRequire(x) {
+      return newRequire(localRequire.resolve(x));
+    }
+
+    function resolve(x) {
+      return modules[name][1][x] || x;
+    }
+  }
+
+  function Module(moduleName) {
+    this.id = moduleName;
+    this.bundle = newRequire;
+    this.exports = {};
+  }
+
+  newRequire.isParcelRequire = true;
+  newRequire.Module = Module;
+  newRequire.modules = modules;
+  newRequire.cache = cache;
+  newRequire.parent = previousRequire;
+  newRequire.register = function(id, exports) {
+    modules[id] = [
+      function(require, module) {
+        module.exports = exports;
+      },
+      {},
+    ];
+  };
+
+  Object.defineProperty(newRequire, 'root', {
+    get: function() {
+      return globalObject[parcelRequireName];
+    },
+  });
+
+  globalObject[parcelRequireName] = newRequire;
+
+  for (var i = 0; i < entry.length; i++) {
+    newRequire(entry[i]);
+  }
+
+  if (mainEntry) {
+    // Expose entry point to Node, AMD or browser globals
+    // Based on https://github.com/ForbesLindesay/umd/blob/master/template.js
+    var mainExports = newRequire(mainEntry);
+
+    // CommonJS
+    if (typeof exports === 'object' && typeof module !== 'undefined') {
+      module.exports = mainExports;
+
+      // RequireJS
+    } else if (typeof define === 'function' && define.amd) {
+      define(function() {
+        return mainExports;
+      });
+
+      // <script>
+    } else if (globalName) {
+      this[globalName] = mainExports;
+    }
+  }
+})({"3Mcwr":[function(require,module,exports) {
+var HMR_HOST = null;
+var HMR_PORT = 64055;
+var HMR_SECURE = false;
+var HMR_ENV_HASH = "d751713988987e9331980363e24189ce";
+module.bundle.HMR_BUNDLE_ID = "e2591092b19d0c340d0592dad9bdedd2";
+// @flow
+/*global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE*/
+/*::
+import type {
+HMRAsset,
+HMRMessage,
+} from '@parcel/reporter-dev-server/src/HMRServer.js';
+interface ParcelRequire {
+(string): mixed;
+cache: {|[string]: ParcelModule|};
+hotData: mixed;
+Module: any;
+parent: ?ParcelRequire;
+isParcelRequire: true;
+modules: {|[string]: [Function, {|[string]: string|}]|};
+HMR_BUNDLE_ID: string;
+root: ParcelRequire;
+}
+interface ParcelModule {
+hot: {|
+data: mixed,
+accept(cb: (Function) => void): void,
+dispose(cb: (mixed) => void): void,
+// accept(deps: Array<string> | string, cb: (Function) => void): void,
+// decline(): void,
+_acceptCallbacks: Array<(Function) => void>,
+_disposeCallbacks: Array<(mixed) => void>,
+|};
+}
+declare var module: {bundle: ParcelRequire, ...};
+declare var HMR_HOST: string;
+declare var HMR_PORT: string;
+declare var HMR_ENV_HASH: string;
+declare var HMR_SECURE: boolean;
+*/
+var OVERLAY_ID = '__parcel__error__overlay__';
+var OldModule = module.bundle.Module;
+function Module(moduleName) {
+  OldModule.call(this, moduleName);
+  this.hot = {
+    data: module.bundle.hotData,
+    _acceptCallbacks: [],
+    _disposeCallbacks: [],
+    accept: function (fn) {
+      this._acceptCallbacks.push(fn || (function () {}));
+    },
+    dispose: function (fn) {
+      this._disposeCallbacks.push(fn);
+    }
+  };
+  module.bundle.hotData = undefined;
+}
+module.bundle.Module = Module;
+var checkedAssets, /*: {|[string]: boolean|}*/
+acceptedAssets, /*: {|[string]: boolean|}*/
+/*: {|[string]: boolean|}*/
+assetsToAccept;
+function getHostname() {
+  return HMR_HOST || (location.protocol.indexOf('http') === 0 ? location.hostname : 'localhost');
+}
+function getPort() {
+  return HMR_PORT || location.port;
+}
+// eslint-disable-next-line no-redeclare
+var parent = module.bundle.parent;
+if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
+  var hostname = getHostname();
+  var port = getPort();
+  var protocol = HMR_SECURE || location.protocol == 'https:' && !(/localhost|127.0.0.1|0.0.0.0/).test(hostname) ? 'wss' : 'ws';
+  var ws = new WebSocket(protocol + '://' + hostname + (port ? ':' + port : '') + '/');
+  // $FlowFixMe
+  ws.onmessage = function (event) /*: {data: string, ...}*/
+  {
+    checkedAssets = {
+      /*: {|[string]: boolean|}*/
+    };
+    acceptedAssets = {
+      /*: {|[string]: boolean|}*/
+    };
+    assetsToAccept = [];
+    var data = /*: HMRMessage*/
+    JSON.parse(event.data);
+    if (data.type === 'update') {
+      // Remove error overlay if there is one
+      removeErrorOverlay();
+      let assets = data.assets.filter(asset => asset.envHash === HMR_ENV_HASH);
+      // Handle HMR Update
+      var handled = false;
+      assets.forEach(asset => {
+        var didAccept = asset.type === 'css' || asset.type === 'js' && hmrAcceptCheck(module.bundle.root, asset.id, asset.depsByBundle);
+        if (didAccept) {
+          handled = true;
+        }
+      });
+      if (handled) {
+        console.clear();
+        assets.forEach(function (asset) {
+          hmrApply(module.bundle.root, asset);
+        });
+        for (var i = 0; i < assetsToAccept.length; i++) {
+          var id = assetsToAccept[i][1];
+          if (!acceptedAssets[id]) {
+            hmrAcceptRun(assetsToAccept[i][0], id);
+          }
+        }
+      } else {
+        window.location.reload();
+      }
+    }
+    if (data.type === 'error') {
+      // Log parcel errors to console
+      for (let ansiDiagnostic of data.diagnostics.ansi) {
+        let stack = ansiDiagnostic.codeframe ? ansiDiagnostic.codeframe : ansiDiagnostic.stack;
+        console.error('🚨 [parcel]: ' + ansiDiagnostic.message + '\n' + stack + '\n\n' + ansiDiagnostic.hints.join('\n'));
+      }
+      // Render the fancy html overlay
+      removeErrorOverlay();
+      var overlay = createErrorOverlay(data.diagnostics.html);
+      // $FlowFixMe
+      document.body.appendChild(overlay);
+    }
+  };
+  ws.onerror = function (e) {
+    console.error(e.message);
+  };
+  ws.onclose = function (e) {
+    if (undefined !== 'test') {
+      console.warn('[parcel] 🚨 Connection to the HMR server was lost');
+    }
+  };
+}
+function removeErrorOverlay() {
+  var overlay = document.getElementById(OVERLAY_ID);
+  if (overlay) {
+    overlay.remove();
+    console.log('[parcel] ✨ Error resolved');
+  }
+}
+function createErrorOverlay(diagnostics) {
+  var overlay = document.createElement('div');
+  overlay.id = OVERLAY_ID;
+  let errorHTML = '<div style="background: black; opacity: 0.85; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; font-family: Menlo, Consolas, monospace; z-index: 9999;">';
+  for (let diagnostic of diagnostics) {
+    let stack = diagnostic.codeframe ? diagnostic.codeframe : diagnostic.stack;
+    errorHTML += `
+      <div>
+        <div style="font-size: 18px; font-weight: bold; margin-top: 20px;">
+          🚨 ${diagnostic.message}
+        </div>
+        <pre>
+          ${stack}
+        </pre>
+        <div>
+          ${diagnostic.hints.map(hint => '<div>' + hint + '</div>').join('')}
+        </div>
+      </div>
+    `;
+  }
+  errorHTML += '</div>';
+  overlay.innerHTML = errorHTML;
+  return overlay;
+}
+function getParents(bundle, id) /*: Array<[ParcelRequire, string]>*/
+{
+  var modules = bundle.modules;
+  if (!modules) {
+    return [];
+  }
+  var parents = [];
+  var k, d, dep;
+  for (k in modules) {
+    for (d in modules[k][1]) {
+      dep = modules[k][1][d];
+      if (dep === id || Array.isArray(dep) && dep[dep.length - 1] === id) {
+        parents.push([bundle, k]);
+      }
+    }
+  }
+  if (bundle.parent) {
+    parents = parents.concat(getParents(bundle.parent, id));
+  }
+  return parents;
+}
+function updateLink(link) {
+  var newLink = link.cloneNode();
+  newLink.onload = function () {
+    if (link.parentNode !== null) {
+      // $FlowFixMe
+      link.parentNode.removeChild(link);
+    }
+  };
+  newLink.setAttribute('href', // $FlowFixMe
+  link.getAttribute('href').split('?')[0] + '?' + Date.now());
+  // $FlowFixMe
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+var cssTimeout = null;
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+    for (var i = 0; i < links.length; i++) {
+      // $FlowFixMe[incompatible-type]
+      var href = /*: string*/
+      links[i].getAttribute('href');
+      var hostname = getHostname();
+      var servedFromHMRServer = hostname === 'localhost' ? new RegExp('^(https?:\\/\\/(0.0.0.0|127.0.0.1)|localhost):' + getPort()).test(href) : href.indexOf(hostname + ':' + getPort());
+      var absolute = (/^https?:\/\//i).test(href) && href.indexOf(window.location.origin) !== 0 && !servedFromHMRServer;
+      if (!absolute) {
+        updateLink(links[i]);
+      }
+    }
+    cssTimeout = null;
+  }, 50);
+}
+function hmrApply(bundle, /*: ParcelRequire*/
+asset) /*:  HMRAsset*/
+{
+  var modules = bundle.modules;
+  if (!modules) {
+    return;
+  }
+  if (asset.type === 'css') {
+    reloadCSS();
+    return;
+  }
+  let deps = asset.depsByBundle[bundle.HMR_BUNDLE_ID];
+  if (deps) {
+    var fn = new Function('require', 'module', 'exports', asset.output);
+    modules[asset.id] = [fn, deps];
+  } else if (bundle.parent) {
+    hmrApply(bundle.parent, asset);
+  }
+}
+function hmrAcceptCheck(bundle, /*: ParcelRequire*/
+id, /*: ParcelRequire*/
+/*: string*/
+depsByBundle) /*: ?{ [string]: { [string]: string } }*/
+{
+  var modules = bundle.modules;
+  if (!modules) {
+    return;
+  }
+  if (depsByBundle && !depsByBundle[bundle.HMR_BUNDLE_ID]) {
+    // If we reached the root bundle without finding where the asset should go,
+    // there's nothing to do. Mark as "accepted" so we don't reload the page.
+    if (!bundle.parent) {
+      return true;
+    }
+    return hmrAcceptCheck(bundle.parent, id, depsByBundle);
+  }
+  if (checkedAssets[id]) {
+    return;
+  }
+  checkedAssets[id] = true;
+  var cached = bundle.cache[id];
+  assetsToAccept.push([bundle, id]);
+  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
+    return true;
+  }
+  return getParents(module.bundle.root, id).some(function (v) {
+    return hmrAcceptCheck(v[0], v[1], null);
+  });
+}
+function hmrAcceptRun(bundle, /*: ParcelRequire*/
+id) /*: string*/
+{
+  var cached = bundle.cache[id];
+  bundle.hotData = {};
+  if (cached && cached.hot) {
+    cached.hot.data = bundle.hotData;
+  }
+  if (cached && cached.hot && cached.hot._disposeCallbacks.length) {
+    cached.hot._disposeCallbacks.forEach(function (cb) {
+      cb(bundle.hotData);
+    });
+  }
+  delete bundle.cache[id];
+  bundle(id);
+  cached = bundle.cache[id];
+  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
+    cached.hot._acceptCallbacks.forEach(function (cb) {
+      var assetsToAlsoAccept = cb(function () {
+        return getParents(module.bundle.root, id);
+      });
+      if (assetsToAlsoAccept && assetsToAccept.length) {
+        assetsToAccept.push.apply(assetsToAccept, assetsToAlsoAccept);
+      }
+    });
+  }
+  acceptedAssets[id] = true;
+}
+
+},{}],"2I5kx":[function(require,module,exports) {
+"use strict";
+
+({
+    plugins: ["jsdom-quokka-plugin"],
+});
+
+/// EXAMPLE
+
+// let ga = document.querySelector(".spanb").textContent;
+
+// ga;
+
+// // // function sing(song, song2) {
+// // //     console.log(song);
+// // //     console.log(song2);
+// // // }
+
+// // // sing(`llalalala`, `dfjdfjdjfjd`);
+
+// // // function times(a, b) {
+// // //     const sum = a * b;
+// // //     console.log(sum);
+// // //     return sum;
+// // // }
+
+// // // const news = times(11, 2);
+
+// // // function total() {
+// // //     console.log(news + 100);
+// // //     return news + 100;
+// // // }
+
+// // // // alert(total());
+
+// // // const game = function (a, b) {
+// // //     console.log(a, b);
+// // // };
+
+// // // game(`ayo`, `olanide`);
+
+// // // const sum2 = (a, b) => {
+// // //     console.log(a + b);
+// // // };
+
+// // // sum2(1, 1);
+
+// // // const name = (a, b) => {
+// // //     console.log(`ayo`);
+// // // };
+
+// // // name();
+
+// // // const name2 = function (a, b) {
+// // //     console.log(`fumi`);
+// // // };
+
+// // // name2();
+
+// // // let list = [`ayo`, `name`, `fumi`, `game`];
+
+// // // console.log(list[3]);
+
+// // // console.log(list);
+
+// // // list.shift();
+// // // console.log(list);
+
+// // // list.pop();
+// // // console.log(list);
+// // // list.push(`drake`);
+// // // console.log(list);
+
+// // // const map = list.concat([`dam`, `dear`, `miz`, `got`]);
+
+// // // console.log(list);
+
+// // // console.log(map);
+
+// // // const app = map.sort();
+
+// // // console.log(app);
+
+// // // let user = {
+// // //     name: `ayo`,
+// // //     dob: `september`,
+// // //     car: `tesla`,
+// // //     age: 30,
+// // //     spells: [`ice`, `fire`, `wind`, `air`],
+// // // };
+
+// // // console.log(user);
+
+// // // console.log(user.age);
+
+// // // user.age = 21;
+
+// // // console.log(user.age);
+
+// // // console.log(user.spells[1]);
+
+// // // let users = [
+// // //     {
+// // //         username: `amy`,
+// // //         password: `map`,
+// // //     },
+
+// // //     {
+// // //         username: `mac`,
+// // //         password: `deep`,
+// // //     },
+
+// // //     {
+// // //         username: `kev`,
+// // //         password: `deep`,
+// // //     },
+
+// // //     {
+// // //         username: `tim`,
+// // //         password: `deep`,
+// // //     },
+
+// // //     {
+// // //         username: `jean`,
+// // //         password: `deep`,
+// // //     },
+// // // ];
+
+// // // let newsFeed = [
+// // //     {
+// // //         username: `jean`,
+// // //         timeline: `hey man im tired`,
+// // //     },
+
+// // //     {
+// // //         username: `pat`,
+// // //         timeline: `i love bitcoin!`,
+// // //     },
+// // // ];
+
+// // // // let userNamePrompt = prompt(`what is your user name`);
+// // // // let password = prompt(`what is your password`);
+
+// // // // const signIn = function (user, password) {};
+// // // // // if (user === users[0].username && password === users[0].password) {
+// // // // //     console.log(`Feed: ${newsFeed[0].timeline}`);
+// // // // //     console.log(`Feed: ${newsFeed[1].timeline}`);
+// // // // // } else {
+// // // // //     alert(`wrong credentials, try again`);
+// // // // // }
+
+// // // // signIn(userNamePrompt, password);
+
+// // // // console.log(`---------`);
+
+// // // // let todo = [`eat`, `sleep`, `clean`, `get food`, `drive`];
+
+// // // // for (let c = 0; c < todo.length; c++) {
+// // // //     console.log(todo[c]);
+// // // // }
+
+// // // // let count = 11;
+// // // // while (count > 1) {
+// // // //     count--;
+// // // //     console.log(count);
+
+// // // // todo.forEach(function (todo, i) {
+// // // //     console.log(todo, i);
+// // // // });
+
+// const button = document.querySelector(".test");
+// const buttonContainer = document.querySelector(".btncon");
+// const userInput = document.querySelector(".input");
+// const mainHeading = document.querySelector(".main");
+// const createNewItem = document.createElement("h3");
+// const selectNewItem = document.querySelector("h3");
+
+// // // const greaterThan0 = function () {
+// // //     return userInput.value.length;
+// // // };
+
+// // // const createElementList = function () {
+// // //     const div = document.createElement("div");
+// // //     const deleteItem = document.createElement("button");
+// // //     const deleteButton = document.querySelector(".delete");
+
+// // //     createNewItem.appendChild(div);
+// // //     div.appendChild(document.createTextNode(userInput.value));
+// // //     mainHeading.appendChild(div);
+// // //     div.append(deleteItem);
+// // //     deleteItem.innerHTML = `Delete`;
+// // //     deleteItem.classList.add("delete");
+// // //     userInput.value = "";
+// // // };
+
+// // // const deleteListElement = function () {
+// // //     if (element.target === "delete") {
+// // //         element.target.parentElement.remove();
+// // //     }
+// // // };
+
+// // // deleteListElement();
+
+// // // const clickEvent = function () {
+// // //     if (greaterThan0() > 0) {
+// // //         createElementList();
+// // //     }
+// // // };
+
+// // // const enterPressed = function (event) {
+// // //     if (greaterThan0() > 0 && event.key === "Enter") {
+// // //         createElementList();
+// // //     }
+// // // };
+
+// // // button.addEventListener("click", clickEvent);
+// // // buttonContainer.addEventListener("keypress", enterPressed);
+
+// // // console.log(selectNewItem);
+
+// // let a = "ayo";
+// // let b = "dave";
+// // let c = `dan`;
+// // const obj = { a, b, c };
+
+// // console.log(obj);
+
+// // const add = function (a, b) {
+// //     a + b;
+// // };
+
+// // const add2 = (a, b) => a + b;
+
+// // console.log(add2(5, 10));
+
+// // const person = {
+// //     firstName: "John",
+// //     lastName: "Doe",
+// //     age: 50,
+// //     eyeColor: "blue",
+// // };
+
+// // const { firstName, lastName, age, eyeColor } = person;
+
+// // console.log(firstName);
+
+// // console.log(lastName);
+
+// // console.log(eyeColor);
+
+// // // curried
+
+// // const curried = (a) => (b) => a * b;
+
+// // console.log(curried);
+
+// // console.log(curried(10));
+// // console.log(curried(10)(10));
+
+// // /// Compose
+
+// // // the act of putting 2 functions together to form a third function where the output of one function is the input of the other.
+
+// // console.log(`------ break -------`);
+
+// // const compose = (fn1, fn2) => (arg) => fn1(fn2(arg));
+
+// // /// javascript parces code from right to left, but reads and from left to right. so it will replace arg with 10, then call sum on 1o, get 11, then call fn1 which is sum on 11 and get 12.
+
+// // const sum22 = (num) => num + 1;
+
+// // console.log(compose(sum22, sum22)(10));
+
+// // const array1 = [1, 2, 3, 4, 5, 6];
+
+// // const double = [];
+
+// // array1.forEach((num) => {
+// //     double.push(num * 2);
+// // });
+
+// // console.log(double);
+
+// // const newMap = array1.map((num) => num * 5);
+
+// // console.log(newMap);
+
+// // const filter = [1, 34, 64, 23, 56, 23, 67, 12, 5, 23, 66, 7, 432, 75, 34];
+
+// // const newFilter = filter.filter((num) => {
+// //     return num > 100;
+// // });
+
+// // console.log(newFilter);
+
+// // const reduced = filter.reduce((acc, num) => {
+// //     return acc + num;
+// // }, 0);
+
+// // console.log(reduced);
+
+// // #2) Check if this array includes any name that has "John" inside of it. If it does, return that
+// // name or names in an array.
+// const dragons = ["Tim", "Johnathan", "Sandy", "Sarah"];
+
+// const neww = dragons.filter((name) => name.includes("John"));
+
+// console.log(neww);
+
+// // #3) Create a function that calulates the power of 100 of a number entered as a parameter
+
+// const powerOf = (num) => {
+//     const total = num ** 100;
+//     console.log(total);
+// };
+
+// powerOf(10000);
+
+// // #4) Useing your function from #3, put in the paramter 10000. What is the result?
+// // Research for yourself why you get this result
+
+// // Solve the below problems:
+
+// // #2) What happens when you run turtle.trim().padEnd(9, '=') on the turtle variable
+// // Read about what the second parameter does in padEnd and padStart
+
+// // #3) Get the below object to go from:
+// let obj = {
+//     my: "name",
+//     is: "Rudolf",
+//     the: "raindeer",
+// };
+// // to this:
+// ("my name is Rudolf the raindeer");
+
+// console.log(obj);
+// const newString = Object.entries(obj);
+
+// console.log(newString);
+
+// // #1 Turn this array into a new array: [1,2,3,[4],[5]]. Bonus if you can do it on one line
+// const array = [[1], [2], [3], [[[4]]], [[[5]]]];
+
+// console.log(array.flat());
+// console.log(array.flat(Infinity));
+
+// // #2 Turn this array into a new array: [ 'Hello young grasshopper!', 'you are', 'learning fast!' ]
+// const greeting = [
+//     ["Hello", "young", "grasshopper!"],
+//     ["you", "are"],
+//     ["learning", "fast!"],
+// ];
+
+// console.log(greeting);
+// const map = greeting.flatMap((x) => x.join(" "));
+
+// console.log(map);
+
+// //#3 Turn the greeting array above into a string: 'Hello young grasshopper you are learning fast!'
+
+// console.log(map.join(" "));
+
+// //#4 Turn the trapped 3 number into: [3]
+
+// const trapped = [[[[[[[[[[[[[[[[[[[[[[[[[[3]]]]]]]]]]]]]]]]]]]]]]]]]];
+
+// console.log(trapped.flat(Infinity));
+
+// //#5 Clean up this email to have no whitespaces. Make the answer be in a single line (return a new string):
+// const userEmail3 = "     cannotfillemailformcorrectly@gmail.com   ";
+
+// console.log(userEmail3.trim());
+
+// //#6 Turn the below users (value is their ID number) into an array: [ [ 'user1', 18273 ], [ 'user2', 92833 ], [ 'user3', 90315 ] ]
+// const users = { user1: 18273, user2: 92833, user3: 90315 };
+
+// const hey = Object.entries(users);
+
+// //#7 change the output array of the above to have the user's IDs multiplied by 2 -- Should output:[ [ 'user1', 36546 ], [ 'user2', 185666 ], [ 'user3', 180630 ] ]
+
+// console.log(hey);
+
+// const map2 = hey.map((x) => [x[0], x[1] * 2]);
+
+// console.log(map2);
+
+// //#8 change the output array of question #7 back into an object with all the users IDs updated to their new version. Should output: { user1: 36546, user2: 185666, user3: 180630 }
+
+// const obb = Object.fromEntries(map2);
+
+// console.log(obb);
+
+// const basket = ["apples", "oranges", "grapes"];
+// const detailedBasket = {
+//     apples: 5,
+//     oranges: 10,
+//     grapes: 1000,
+// };
+
+// // //1
+// for (let i = 0; i < basket.length; i++) {
+//     console.log(basket[i]);
+// }
+
+// //2
+// basket.forEach((item) => {
+//     console.log(item);
+// });
+
+// for (item in detailedBasket) {
+//     console.log(item);
+// }
+
+// for (item of basket) {
+//     console.log(item);
+// }
+
+// Question #1:
+// create a function called biggestNumberInArray() that takes
+// an array as a parameter and returns the biggest number.
+// biggestNumberInArray([-1,0,3,100, 99, 2, 99]) should return 100;
+// Use at least 3 different types of javascript loops to write this:
+// const array0 = [-1, 0, 3, 100, 99, 2, 99]; // should return 100
+// const array2 = ["a", 3, 4, 2]; // should return 4
+// const array3 = []; // should return 0
+
+// let high = 0;
+
+// function biggestNumberInArray(arr) {
+//     for (let num of arr) {
+//         if (num > high) {
+//             high = num;
+//         }
+//     }
+//     return high;
+// }
+
+// let high2 = 0;
+// function biggestNumberInArray2(arr) {
+//     arr.forEach((item) => {
+//         if (item > high2) {
+//             high2 = item;
+//         }
+//     });
+//     return high2;
+// }
+
+// function biggestNumberInArray3(arr) {}
+
+// console.log(biggestNumberInArray(array0));
+// console.log(biggestNumberInArray2(array3));
+
+// Question #2:
+// Write a function checkBasket() that lets you know if the item is in the basket or not
+// amazonBasket = {
+//     glasses: 1,
+//     books: 2,
+//     floss: 100,
+// };
+
+// function checkBasket(basket, lookingFor) {}
+
+// Exercise 1: what do you think the MIN_SAFE_INTEGER is?
+// console.log(Number.MAX_SAFE_INTEGER);
+// console.log(Number.MIN_SAFE_INTEGER);
+
+// // Exercise 2: why does this throw an error? How can you fix it?
+// 3n + 4n + 1n;
+
+// // Exercise 3: Clean up this code using optional chaining
+
+// let will_pokemon = {
+//     pikachu: {
+//         species: "Mouse Pokemon",
+//         height: 0.4,
+//         weight: 6,
+//         power: "lightning",
+//         friend: {
+//             charizard: {
+//                 species: "Dragon Pokemon",
+//                 height: 1.7,
+//                 weight: 90.5,
+//                 power: "fire",
+//             },
+//         },
+//     },
+// };
+
+// let andrei_pokemon = {
+//     raichu: {
+//         species: "Mouse Pokemon",
+//         height: 0.8,
+//         weight: 30,
+//         power: "",
+//     },
+// };
+
+//
+//     andrei_pokemon &&
+//     andrei_pokemon.raichu &&
+//     will_pokemon &&
+//     will_pokemon.pikachu &&
+//     will_pokemon.pikachu.friend &&
+//     will_pokemon.pikachu.friend.charizard
+// ) {
+//     console.log("fight!");
+// } else {
+//     console.log("walk away...");
+// }
+
+// if (andrei_pokemon?.raichu && will_pokemon?.pikachu?.friend?.charizard) {
+//     console.log("fight!");
+// } else {
+//     console.log("walk away...");
+// }
+
+// // Exercise 4: What do these each output?
+// console.log(false ?? "hellooo"); //true
+// console.log(null ?? "hellooo"); //false
+// console.log(null || "hellooo"); // true
+// console.log((false || null) ?? "hellooo"); //false
+// console.log(null ?? (false || "hellooo")); // true
+
+// const arr = [1, 2, 4, 591, 392, 391, 2, 5, 10, 2, 1, 1, 1, 20, 20].sort(
+//     (a, b) => a - b
+// );
+
+// const finalArr = [];
+
+// const getNumbers = (arr) => {
+//     for (let [i, num] of arr.entries()) {
+//         console.log(i, num);
+//     }
+// };
+
+// getNumbers(arr);
+
+// let arg = [1, 2, 3, 4];
+
+// let npp = [...arg];
+
+// console.log(npp);
+// console.log(arg);
+
+// let game = "house";
+
+// console.log(game);
+
+// game;
+
+// const arr1 = [1, 2, 3, 4, 5];
+// const arr2 = [4, 5, 6, 7, 8];
+
+// console.log(arr1.concat(arr2));
+
+// arr1.forEach((n) => {
+//     console.log(n);
+// });
+
+// let aim = [1, 2, 3, 4, 5, 6];
+
+// for (let n of aim) {
+//     console.log(n * 2);
+// }
+
+// let newAim = [...aim];
+
+// console.log(newAim);
+
+// let name = "ayo adesanya";
+
+// let newName = [...name];
+
+// console.log(newName);
+
+// function greeting(msg) {
+//     return function who(name) {
+//         console.log(`${msg}, ${name}!`);
+//     };
+// }
+
+// let hello = greeting(`hello`);
+// let howdy = greeting(`howdy`);
+
+// // hello(`kyle`)
+// hello(`sarah`);
+
+// ///
+
+// function classroom(teacher) {
+//     return function study() {
+//         console.log(`${teacher} says to study ${this.topic}`);
+//     };
+// }
+
+// let assignment = classroom(`ayo`);
+
+// let homework = {
+//     topic: "JS",
+//     assignment: assignment,
+// };
+
+// homework.assignment();
+
+// var homework1 = {
+//     topic: "JS",
+// };
+
+// var otherHomework = Object.create(homework1);
+
+// let hype = otherHomework;
+
+// console.log(hype);
+
+// var x = "hello";
+// if (x) {
+//     // will run!
+// }
+
+// let la = (x = `hello`) => {
+//     if (x === true) {
+//         // won't run :(
+//         console.log(x);
+//     } else {
+//         console.log(`no`);
+//     }
+// };
+
+// let result = prompt("Whats your name", 100);
+
+// alert(prompt("age"));
+
+// let boss = confirm("are you the boss");
+
+// alert(boss);
+
+// confirm("you good");
+
+// let a = prompt("First number?", 1);
+// let b = prompt("Second number?", 2);
+
+// alert(+a + +b); // 12
+
+// let age = prompt("how old are you");
+
+// let message =
+//     +age === 18 || +age <= 30
+//         ? "your allowed in the club"
+//         : age < 18
+//         ? "you are rejected"
+//         : age > 100
+//         ? "your too old"
+//         : "your can come in but your quite old";
+
+// alert(message);
+
+// let company = prompt("Which company created JavaScript?", "");
+
+// company == "Netscape" ? alert("Right!") : alert("Wrong.");
+
+// let question = prompt("what the official name of javascript");
+
+// let message = question.toLowerCase() === "ecma" ? "right" : "you got it wrong";
+
+// alert(message);
+
+// let question = prompt("true or false");
+
+// if (+question > 0) alert(1);
+
+// if (+question < 0) alert(-1);
+
+// if (+question === 0) alert(0);
+
+// let result;
+// let a = 1;
+// let b = 1;
+
+// a + b < 4 ? (result = "below") : (result = "over");
+
+// alert(result);
+
+// let login = prompt("login please");
+
+// login === "Employee"
+//     ? alert("hello")
+//     : login == "Director"
+//     ? alert("Greet message")
+//     : alert("No login");
+
+// let age = 14;
+
+// if (!(age >= 14 && age <= 90));
+
+// if (age < 14 || age > 90);
+
+// let userName = prompt("Who's there?", "");
+
+// if (userName === "admin") {
+//     let password = prompt("Password?");
+
+//     if (password === "themaster") {
+//         alert("Welcome");
+//     } else if (password === "" || password === null) {
+//         alert("Cancelled");
+//     } else {
+//         alert("wrong password");
+//     }
+// } else if (userName === "" || userName === null) {
+//     alert("Canceled");
+// } else {
+//     alert("i don't know you");
+// }
+
+// let i = 1;
+
+// while (i <= 5) {
+//     alert(i);
+//     i++;
+// }
+
+// for (let p = 1; p <= 5; p++) {
+//     alert(p);
+// }
+
+// let sum = 0;
+
+// while (true) {
+//     let value = +prompt("add number", "");
+
+//     if (!value) break; // (*)
+
+//     sum += value;
+// }
+
+// alert(sum);
+
+// for (let n = 0; n < 10; n++) {
+//     if (n % 2 > 0) continue;
+
+//     alert(n);
+// }
+
+// let n = 0;
+
+// for (; n < 10; n++) {
+//     if (n < 5) {
+//         alert(n);
+//     } else {
+//         continue;
+//     }
+// }
+// alert(n);
+
+// for (let n = 2; n <= 10; n++) {
+//     if (n % 2 > 0) continue;
+
+//     alert(n);
+// }
+
+// for (let i = 0; i < 3; i++) {
+//     alert(`number ${i}!`);
+// }
+
+// let n = 0;
+
+// while (n < 3) {
+//     alert(`number ${n}!`);
+//     n++;
+// }
+
+// let num;
+
+// do {
+//     num = prompt("input a number greater than 100", "");
+// } while (num <= 100 && !num);
+
+// let age = +prompt("age");
+
+// function checkAge(age) {
+//     return age > 18 || confirm("Did parents allow you?");
+// }
+
+// checkAge();
+
+// const min = function (a, b) {
+//     console.log(a < b ? a : b);
+// };
+
+// min(2, 5);
+// min(3, -1);
+// min(1, 1);
+
+// const pow = function (x, n) {
+//     console.log(x ** n);
+// };
+
+// pow(3, 2);
+// pow(3, 3);
+// pow(1, 100);
+
+// let pow = function (x, n) {
+//     x = +prompt("what is x?");
+//     n = +prompt("what is y?");
+
+//     if (!x || !n) {
+//         alert(`Power ${x || n} is not supported`);
+//     } else {
+//         alert(x ** n);
+//     }
+// };
+
+// pow();
+
+// const min = function (a, b) {
+//     return a < b ? a : b;
+// };
+
+// console.log(min(2, 5));
+// console.log(min(3, -1));
+// console.log(min(1, 1));
+
+// const pow = function (x1, n1) {
+//     x1 = +prompt("x?");
+//     n1 = +prompt("n?");
+
+//     !x1 || !n1 ? alert("please enter a valid number") : alert(x1 ** n1);
+// };
+
+// pow();
+// // pow(3, 3);
+// // pow(1, 100);
+
+// let ask = (question, yes, no) => {
+//     confirm(question) ? yes() : no();
+// };
+
+// debugger;
+// ask(
+//     "Do you agree?",
+//     () => alert("you agree"),
+//     () => alert("you cancelled")
+// );
+
+// debugger;
+// function pow(x, n) {
+//     let result = 1;
+
+//     for (let i = 0; i < n; i++) {
+//         result *= x;
+//     }
+
+//     return result;
+// }
+
+// let x = prompt("x?", "");
+// let n = prompt("n?", "");
+
+// if (n <= 0) {
+//     alert(`Power ${n} is not supported,
+//       please enter an integer number greater than zero`);
+// } else {
+//     alert(pow(x, n));
+// }
+
+// let user = {
+//     name: "John",
+//     age: 30,
+//     "likes birds": true, // multiword property name must be quoted
+// };
+
+// console.log(user["likes birds"]);
+
+// console.log(user.age);
+
+// delete user.age;
+
+// console.log(user.age);
+
+// let user = {
+//     name: "John",
+//     age: 30,
+// };
+
+// let key = prompt("What do you want to know about the user?", "name");
+
+// // access by variable
+// alert(user[key]); // John (if enter "name")
+
+// let fruit = prompt("Which fruit to buy?");
+
+// let bag = {
+//     [fruit]: 5, // the name of the property is taken from the variable fruit
+// };
+
+// alert(bag.apple); // 5 if fruit="apple"
+
+// let user = {};
+
+// user.name = `John`;
+// user.surname = `Smith`;
+
+// console.log(user.name);
+
+// user.name = `Pete`;
+
+// console.log(user.name);
+
+// delete user.name;
+
+// console.log(user.name);
+
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130,
+// };
+
+// let sum = 0;
+
+// const biz = function (obj) {
+//     for (let name in obj) {
+//         sum += obj[name];
+//     }
+
+//     sum === 0 || null || undefined ? alert("no properties") : alert(sum);
+// };
+
+// biz(salaries);
+
+// let menu = {
+//     width: 200,
+//     height: 300,
+//     title: "My menu",
+// };
+
+// let clone = { ...menu };
+
+// console.log(clone);
+
+// clone.width = 600;
+
+// console.log(clone);
+// console.log(menu);
+
+// const multiplyNumeric = function (obj) {
+//     for (let key in obj) {
+//         if (typeof obj[key] === "number") {
+//             obj[key] = obj[key] * 2;
+//         }
+//     }
+
+//     console.log(obj);
+// };
+
+// let calculator = {
+//     read() {
+//         this.a = +prompt("Insert Number");
+//         this.b = +prompt("Insert Number");
+//     },
+
+//     sum() {
+//         return this.a + this.b;
+//     },
+
+//     mul() {
+//         return this.a * this.b;
+//     },
+// };
+
+// calculator.read();
+// alert(calculator.sum());
+// alert(calculator.mul());
+
+// let ladder = {
+//     step: 0,
+
+//     up() {
+//         this.step++;
+//         return this;
+//     },
+//     down() {
+//         this.step--;
+//         return this;
+//     },
+//     showStep() {
+//         // shows the current step
+//         alert(this.step);
+//         return this;
+//     },
+// };
+
+// ladder.up().up().down().showStep();
+
+// let Calculator = function () {
+//     this.read = function () {
+//         this.a = +prompt("a?");
+//         this.b = +prompt("b?");
+//     };
+
+//     (this.sum = function () {
+//         return alert(this.a + this.b);
+//     }),
+//         (this.mul = function () {
+//             return alert(this.a * this.b);
+//         });
+// };
+
+// let calculator1 = new Calculator();
+// let calculator12 = new Calculator();
+
+// calculator12.read();
+
+// calculator12.sum();
+
+// calculator12.mul();
+
+// let Accumulator = function (startingValue) {
+//     this.value = startingValue = 1;
+
+//     this.read = function () {
+//         this.value += +prompt("add a number");
+//         return this.value;
+//     };
+
+//     this.show = function () {
+//         return alert(this.value);
+//     };
+// };
+
+// let accumulator1 = new Accumulator();
+
+// accumulator1.read();
+// accumulator1.read();
+// accumulator1.read();
+// accumulator1.read();
+// accumulator1.show();
+// accumulator1.read();
+// accumulator1.show();
+
+// let num = +prompt("the first number");
+// let num2 = +prompt("the second number");
+
+// alert(num + num2);
+
+// alert((6.35).toFixed(1));
+// alert(Math.round(6.35 * 10) / 10);
+// alert((6.35 * 10).toFixed(20));
+
+let readNumber = function () {
+   
+   let num;
+
+   do {
+
+    num = prompt("Enter a number please?", 0);
+
+   }
+   
+   
+
+};
+
+readNumber();
+
+},{}]},["3Mcwr","2I5kx"], "2I5kx", "parcelRequirecb59")
+
+//# sourceMappingURL=index.HASH_REF_e2591092b19d0c340d0592dad9bdedd2.js.map

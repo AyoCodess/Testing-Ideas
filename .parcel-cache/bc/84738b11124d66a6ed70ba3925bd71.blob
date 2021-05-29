@@ -1,0 +1,8 @@
+"use strict";
+
+function sing(c, d) {
+    const c = console.log(`aaa`);
+    const d = console.log(`teeeeee`);
+}
+
+sing();

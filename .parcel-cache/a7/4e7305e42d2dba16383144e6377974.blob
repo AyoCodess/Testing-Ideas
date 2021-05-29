@@ -1,0 +1,8 @@
+"use strict";
+
+function sing(song, song2) {
+    console.log(song);
+    console.log(song2);
+}
+
+sing(`llalalala`, `dfjdfjdjfjd`);

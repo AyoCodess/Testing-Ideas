@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="/index.HASH_REF_018db93862fa12a059426423c5ebeb1d.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+        <script defer="" src="/index.HASH_REF_e2591092b19d0c340d0592dad9bdedd2.js"></script>
+
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li class="nav__item"><a href="/index.html">Home</a></li>
+                <li class="nav__item"><a href="/About.html">About</a></li>
+                <li class="nav__item"><a href="/Login.html">Login</a></li>
+                <li class="nav__item"><a href="/Gallery.html">Gallery</a></li>
+                <li class="nav__item"><a href="/robot/robot.html">Robot</a></li>
+                <li class="nav__item">
+                    <a href="/bootstrap/bootstrap.html">Bootstrap</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/startup-test/startup-test.html">Startup</a>
+                </li>
+                <li class="nav__item-1">
+                    <a href="/grid_mock/grid-index.html">Grid Mock</a>
+                </li>
+            </ul>
+        </div>
+
+        <h1 class="margin-bottom">Demo Webpage</h1>
+
+        <div class="btncon">
+            <button class="test">
+                <span>Click Me</span>
+            </button>
+        </div>
+        <br>
+        <br>
+
+        <h2 class="margin-bottom-small">Hello World</h2>
+
+        <p class="margin-bottom-small">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+            praesentium cumque reiciendis debitis accusamus doloribus sunt
+            eveniet vero voluptatem. Laboriosam similique neque eos cumque!
+            Quaerat quidem laborum quis soluta. Unde neque hic praesentium
+            distinctio, repellendus voluptatibus sapiente necessitatibus a harum
+            quae animi sunt cum laboriosam quibusdam ratione vitae deserunt?
+            Omnis impedit doloremque modi eum ipsa voluptates asperiores illum,
+            reprehenderit voluptate. Quam reiciendis repudiandae voluptatum
+            numquam nemo in porro quidem nam sed qui molestiae quasi ullam
+            corrupti pariatur corporis nobis illo tempore eligendi voluptas
+            optio, explicabo natus sequi? Tempora temporibus qui odit suscipit
+            impedit similique doloremque sequi aliquid, voluptatum magnam
+            itaque.
+        </p>
+
+        <h2 class="margin-bottom-small">What we do</h2>
+
+        <p class="margin-bottom-small">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+            praesentium cumque reiciendis debs sapiente necessitatibus a harum
+            quae animi sunt cum labor in porro quidem nam sed qui molestiae
+            quasi ullam corrupti pariatur corporis nobis illo tempore eligendi
+            voluptas optio, explicabo natus sequi? Tempora temporibus qui odit
+            suscipit impedit similique doloremque sequi aliquid, voluptatum
+            magnam itaque.
+        </p>
+
+        <h2 class="margin-bottom-small">How we can help you</h2>
+
+        <p class="margin-bottom-small">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+            praesentium cumque reiciendis debitis accusamus doloribus sunt
+            eveniet vero voluptatem. Laboriosam similique neque eos cumque!
+        </p>
+    </body>
+</html>

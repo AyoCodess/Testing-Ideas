@@ -1,19 +1,23 @@
 {
-  "name": "Ayo",
-  "version": "1.0.0",
-  "description": "Project",
-  "default": "index.html",
-  "scripts": {
-    "start": "parcel index.html",
-    "sass": "sass --watch",
-    "build": "parcel build index.html"
-  },
-  "author": "Ayo",
-  "license": "ISC",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0-nightly.622",
-    "autoprefixer": "^10.2.4",
-    "parcel": "^2.0.0-beta.1",
-    "sass": "^1.26.10"
-  }
+    "name": "Ayo",
+    "version": "1.0.0",
+    "description": "Project",
+    "default": "index.html",
+    "scripts": {
+        "start": "parcel index.html",
+        "sass": "sass --watch",
+        "build": "parcel build index.html"
+    },
+    "author": "Ayo",
+    "license": "ISC",
+    "devDependencies": {
+        "@parcel/transformer-sass": "^2.0.0-nightly.622",
+        "autoprefixer": "^10.2.4",
+        "parcel": "^2.0.0-beta.1",
+        "sass": "^1.26.10"
+    },
+    "dependencies": {
+        "animate.css": "^4.1.1",
+        "jsdom-quokka-plugin": "^1.0.16"
+    }
 }

@@ -1,0 +1,751 @@
+"use strict";
+
+({
+    plugins: ["jsdom-quokka-plugin"],
+});
+
+/// EXAMPLE
+
+let ga = document.querySelector(".spanb").textContent;
+
+ga;
+
+// // // function sing(song, song2) {
+// // //     console.log(song);
+// // //     console.log(song2);
+// // // }
+
+// // // sing(`llalalala`, `dfjdfjdjfjd`);
+
+// // // function times(a, b) {
+// // //     const sum = a * b;
+// // //     console.log(sum);
+// // //     return sum;
+// // // }
+
+// // // const news = times(11, 2);
+
+// // // function total() {
+// // //     console.log(news + 100);
+// // //     return news + 100;
+// // // }
+
+// // // // alert(total());
+
+// // // const game = function (a, b) {
+// // //     console.log(a, b);
+// // // };
+
+// // // game(`ayo`, `olanide`);
+
+// // // const sum2 = (a, b) => {
+// // //     console.log(a + b);
+// // // };
+
+// // // sum2(1, 1);
+
+// // // const name = (a, b) => {
+// // //     console.log(`ayo`);
+// // // };
+
+// // // name();
+
+// // // const name2 = function (a, b) {
+// // //     console.log(`fumi`);
+// // // };
+
+// // // name2();
+
+// // // let list = [`ayo`, `name`, `fumi`, `game`];
+
+// // // console.log(list[3]);
+
+// // // console.log(list);
+
+// // // list.shift();
+// // // console.log(list);
+
+// // // list.pop();
+// // // console.log(list);
+// // // list.push(`drake`);
+// // // console.log(list);
+
+// // // const map = list.concat([`dam`, `dear`, `miz`, `got`]);
+
+// // // console.log(list);
+
+// // // console.log(map);
+
+// // // const app = map.sort();
+
+// // // console.log(app);
+
+// // // let user = {
+// // //     name: `ayo`,
+// // //     dob: `september`,
+// // //     car: `tesla`,
+// // //     age: 30,
+// // //     spells: [`ice`, `fire`, `wind`, `air`],
+// // // };
+
+// // // console.log(user);
+
+// // // console.log(user.age);
+
+// // // user.age = 21;
+
+// // // console.log(user.age);
+
+// // // console.log(user.spells[1]);
+
+// // // let users = [
+// // //     {
+// // //         username: `amy`,
+// // //         password: `map`,
+// // //     },
+
+// // //     {
+// // //         username: `mac`,
+// // //         password: `deep`,
+// // //     },
+
+// // //     {
+// // //         username: `kev`,
+// // //         password: `deep`,
+// // //     },
+
+// // //     {
+// // //         username: `tim`,
+// // //         password: `deep`,
+// // //     },
+
+// // //     {
+// // //         username: `jean`,
+// // //         password: `deep`,
+// // //     },
+// // // ];
+
+// // // let newsFeed = [
+// // //     {
+// // //         username: `jean`,
+// // //         timeline: `hey man im tired`,
+// // //     },
+
+// // //     {
+// // //         username: `pat`,
+// // //         timeline: `i love bitcoin!`,
+// // //     },
+// // // ];
+
+// // // // let userNamePrompt = prompt(`what is your user name`);
+// // // // let password = prompt(`what is your password`);
+
+// // // // const signIn = function (user, password) {};
+// // // // // if (user === users[0].username && password === users[0].password) {
+// // // // //     console.log(`Feed: ${newsFeed[0].timeline}`);
+// // // // //     console.log(`Feed: ${newsFeed[1].timeline}`);
+// // // // // } else {
+// // // // //     alert(`wrong credentials, try again`);
+// // // // // }
+
+// // // // signIn(userNamePrompt, password);
+
+// // // // console.log(`---------`);
+
+// // // // let todo = [`eat`, `sleep`, `clean`, `get food`, `drive`];
+
+// // // // for (let c = 0; c < todo.length; c++) {
+// // // //     console.log(todo[c]);
+// // // // }
+
+// // // // let count = 11;
+// // // // while (count > 1) {
+// // // //     count--;
+// // // //     console.log(count);
+
+// // // // todo.forEach(function (todo, i) {
+// // // //     console.log(todo, i);
+// // // // });
+
+// const button = document.querySelector(".test");
+// const buttonContainer = document.querySelector(".btncon");
+// const userInput = document.querySelector(".input");
+// const mainHeading = document.querySelector(".main");
+// const createNewItem = document.createElement("h3");
+// const selectNewItem = document.querySelector("h3");
+
+// // // const greaterThan0 = function () {
+// // //     return userInput.value.length;
+// // // };
+
+// // // const createElementList = function () {
+// // //     const div = document.createElement("div");
+// // //     const deleteItem = document.createElement("button");
+// // //     const deleteButton = document.querySelector(".delete");
+
+// // //     createNewItem.appendChild(div);
+// // //     div.appendChild(document.createTextNode(userInput.value));
+// // //     mainHeading.appendChild(div);
+// // //     div.append(deleteItem);
+// // //     deleteItem.innerHTML = `Delete`;
+// // //     deleteItem.classList.add("delete");
+// // //     userInput.value = "";
+// // // };
+
+// // // const deleteListElement = function () {
+// // //     if (element.target === "delete") {
+// // //         element.target.parentElement.remove();
+// // //     }
+// // // };
+
+// // // deleteListElement();
+
+// // // const clickEvent = function () {
+// // //     if (greaterThan0() > 0) {
+// // //         createElementList();
+// // //     }
+// // // };
+
+// // // const enterPressed = function (event) {
+// // //     if (greaterThan0() > 0 && event.key === "Enter") {
+// // //         createElementList();
+// // //     }
+// // // };
+
+// // // button.addEventListener("click", clickEvent);
+// // // buttonContainer.addEventListener("keypress", enterPressed);
+
+// // // console.log(selectNewItem);
+
+// // let a = "ayo";
+// // let b = "dave";
+// // let c = `dan`;
+// // const obj = { a, b, c };
+
+// // console.log(obj);
+
+// // const add = function (a, b) {
+// //     a + b;
+// // };
+
+// // const add2 = (a, b) => a + b;
+
+// // console.log(add2(5, 10));
+
+// // const person = {
+// //     firstName: "John",
+// //     lastName: "Doe",
+// //     age: 50,
+// //     eyeColor: "blue",
+// // };
+
+// // const { firstName, lastName, age, eyeColor } = person;
+
+// // console.log(firstName);
+
+// // console.log(lastName);
+
+// // console.log(eyeColor);
+
+// // // curried
+
+// // const curried = (a) => (b) => a * b;
+
+// // console.log(curried);
+
+// // console.log(curried(10));
+// // console.log(curried(10)(10));
+
+// // /// Compose
+
+// // // the act of putting 2 functions together to form a third function where the output of one function is the input of the other.
+
+// // console.log(`------ break -------`);
+
+// // const compose = (fn1, fn2) => (arg) => fn1(fn2(arg));
+
+// // /// javascript parces code from right to left, but reads and from left to right. so it will replace arg with 10, then call sum on 1o, get 11, then call fn1 which is sum on 11 and get 12.
+
+// // const sum22 = (num) => num + 1;
+
+// // console.log(compose(sum22, sum22)(10));
+
+// // const array1 = [1, 2, 3, 4, 5, 6];
+
+// // const double = [];
+
+// // array1.forEach((num) => {
+// //     double.push(num * 2);
+// // });
+
+// // console.log(double);
+
+// // const newMap = array1.map((num) => num * 5);
+
+// // console.log(newMap);
+
+// // const filter = [1, 34, 64, 23, 56, 23, 67, 12, 5, 23, 66, 7, 432, 75, 34];
+
+// // const newFilter = filter.filter((num) => {
+// //     return num > 100;
+// // });
+
+// // console.log(newFilter);
+
+// // const reduced = filter.reduce((acc, num) => {
+// //     return acc + num;
+// // }, 0);
+
+// // console.log(reduced);
+
+// // #2) Check if this array includes any name that has "John" inside of it. If it does, return that
+// // name or names in an array.
+// const dragons = ["Tim", "Johnathan", "Sandy", "Sarah"];
+
+// const neww = dragons.filter((name) => name.includes("John"));
+
+// console.log(neww);
+
+// // #3) Create a function that calulates the power of 100 of a number entered as a parameter
+
+// const powerOf = (num) => {
+//     const total = num ** 100;
+//     console.log(total);
+// };
+
+// powerOf(10000);
+
+// // #4) Useing your function from #3, put in the paramter 10000. What is the result?
+// // Research for yourself why you get this result
+
+// // Solve the below problems:
+
+// // #2) What happens when you run turtle.trim().padEnd(9, '=') on the turtle variable
+// // Read about what the second parameter does in padEnd and padStart
+
+// // #3) Get the below object to go from:
+// let obj = {
+//     my: "name",
+//     is: "Rudolf",
+//     the: "raindeer",
+// };
+// // to this:
+// ("my name is Rudolf the raindeer");
+
+// console.log(obj);
+// const newString = Object.entries(obj);
+
+// console.log(newString);
+
+// // #1 Turn this array into a new array: [1,2,3,[4],[5]]. Bonus if you can do it on one line
+// const array = [[1], [2], [3], [[[4]]], [[[5]]]];
+
+// console.log(array.flat());
+// console.log(array.flat(Infinity));
+
+// // #2 Turn this array into a new array: [ 'Hello young grasshopper!', 'you are', 'learning fast!' ]
+// const greeting = [
+//     ["Hello", "young", "grasshopper!"],
+//     ["you", "are"],
+//     ["learning", "fast!"],
+// ];
+
+// console.log(greeting);
+// const map = greeting.flatMap((x) => x.join(" "));
+
+// console.log(map);
+
+// //#3 Turn the greeting array above into a string: 'Hello young grasshopper you are learning fast!'
+
+// console.log(map.join(" "));
+
+// //#4 Turn the trapped 3 number into: [3]
+
+// const trapped = [[[[[[[[[[[[[[[[[[[[[[[[[[3]]]]]]]]]]]]]]]]]]]]]]]]]];
+
+// console.log(trapped.flat(Infinity));
+
+// //#5 Clean up this email to have no whitespaces. Make the answer be in a single line (return a new string):
+// const userEmail3 = "     cannotfillemailformcorrectly@gmail.com   ";
+
+// console.log(userEmail3.trim());
+
+// //#6 Turn the below users (value is their ID number) into an array: [ [ 'user1', 18273 ], [ 'user2', 92833 ], [ 'user3', 90315 ] ]
+// const users = { user1: 18273, user2: 92833, user3: 90315 };
+
+// const hey = Object.entries(users);
+
+// //#7 change the output array of the above to have the user's IDs multiplied by 2 -- Should output:[ [ 'user1', 36546 ], [ 'user2', 185666 ], [ 'user3', 180630 ] ]
+
+// console.log(hey);
+
+// const map2 = hey.map((x) => [x[0], x[1] * 2]);
+
+// console.log(map2);
+
+// //#8 change the output array of question #7 back into an object with all the users IDs updated to their new version. Should output: { user1: 36546, user2: 185666, user3: 180630 }
+
+// const obb = Object.fromEntries(map2);
+
+// console.log(obb);
+
+const basket = ["apples", "oranges", "grapes"];
+const detailedBasket = {
+    apples: 5,
+    oranges: 10,
+    grapes: 1000,
+};
+
+// //1
+for (let i = 0; i < basket.length; i++) {
+    console.log(basket[i]);
+}
+
+// //2
+// basket.forEach((item) => {
+//     console.log(item);
+// });
+
+// for (item in detailedBasket) {
+//     console.log(item);
+// }
+
+// for (item of basket) {
+//     console.log(item);
+// }
+
+// Question #1:
+// create a function called biggestNumberInArray() that takes
+// an array as a parameter and returns the biggest number.
+// biggestNumberInArray([-1,0,3,100, 99, 2, 99]) should return 100;
+// Use at least 3 different types of javascript loops to write this:
+const array0 = [-1, 0, 3, 100, 99, 2, 99]; // should return 100
+const array2 = ["a", 3, 4, 2]; // should return 4
+const array3 = []; // should return 0
+
+let high = 0;
+
+function biggestNumberInArray(arr) {
+    for (let num of arr) {
+        if (num > high) {
+            high = num;
+        }
+    }
+    return high;
+}
+
+let high2 = 0;
+function biggestNumberInArray2(arr) {
+    arr.forEach((item) => {
+        if (item > high2) {
+            high2 = item;
+        }
+    });
+    return high2;
+}
+
+// function biggestNumberInArray3(arr) {}
+
+// console.log(biggestNumberInArray(array0));
+// console.log(biggestNumberInArray2(array3));
+
+// Question #2:
+// Write a function checkBasket() that lets you know if the item is in the basket or not
+// amazonBasket = {
+//     glasses: 1,
+//     books: 2,
+//     floss: 100,
+// };
+
+// function checkBasket(basket, lookingFor) {}
+
+// Exercise 1: what do you think the MIN_SAFE_INTEGER is?
+// console.log(Number.MAX_SAFE_INTEGER);
+// console.log(Number.MIN_SAFE_INTEGER);
+
+// // Exercise 2: why does this throw an error? How can you fix it?
+// 3n + 4n + 1n;
+
+// // Exercise 3: Clean up this code using optional chaining
+
+// let will_pokemon = {
+//     pikachu: {
+//         species: "Mouse Pokemon",
+//         height: 0.4,
+//         weight: 6,
+//         power: "lightning",
+//         friend: {
+//             charizard: {
+//                 species: "Dragon Pokemon",
+//                 height: 1.7,
+//                 weight: 90.5,
+//                 power: "fire",
+//             },
+//         },
+//     },
+// };
+
+// let andrei_pokemon = {
+//     raichu: {
+//         species: "Mouse Pokemon",
+//         height: 0.8,
+//         weight: 30,
+//         power: "",
+//     },
+// };
+
+//
+//     andrei_pokemon &&
+//     andrei_pokemon.raichu &&
+//     will_pokemon &&
+//     will_pokemon.pikachu &&
+//     will_pokemon.pikachu.friend &&
+//     will_pokemon.pikachu.friend.charizard
+// ) {
+//     console.log("fight!");
+// } else {
+//     console.log("walk away...");
+// }
+
+// if (andrei_pokemon?.raichu && will_pokemon?.pikachu?.friend?.charizard) {
+//     console.log("fight!");
+// } else {
+//     console.log("walk away...");
+// }
+
+// // Exercise 4: What do these each output?
+// console.log(false ?? "hellooo"); //true
+// console.log(null ?? "hellooo"); //false
+// console.log(null || "hellooo"); // true
+// console.log((false || null) ?? "hellooo"); //false
+// console.log(null ?? (false || "hellooo")); // true
+
+const arr = [1, 2, 4, 591, 392, 391, 2, 5, 10, 2, 1, 1, 1, 20, 20].sort(
+    (a, b) => a - b
+);
+
+const finalArr = [];
+
+const getNumbers = (arr) => {
+    for (let [i, num] of arr.entries()) {
+        console.log(i, num);
+    }
+};
+
+getNumbers(arr);
+
+let arg = [1, 2, 3, 4];
+
+let npp = [...arg];
+
+console.log(npp);
+console.log(arg);
+
+let game = "house";
+
+console.log(game);
+
+game;
+
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [4, 5, 6, 7, 8];
+
+console.log(arr1.concat(arr2));
+
+arr1.forEach((n) => {
+    console.log(n);
+});
+
+let aim = [1, 2, 3, 4, 5, 6];
+
+for (let n of aim) {
+    console.log(n * 2);
+}
+
+let newAim = [...aim];
+
+console.log(newAim);
+
+let name = "ayo adesanya";
+
+let newName = [...name];
+
+console.log(newName);
+
+function greeting(msg) {
+    return function who(name) {
+        console.log(`${msg}, ${name}!`);
+    };
+}
+
+let hello = greeting(`hello`);
+let howdy = greeting(`howdy`);
+
+// hello(`kyle`)
+hello(`sarah`);
+
+///
+
+function classroom(teacher) {
+    return function study() {
+        console.log(`${teacher} says to study ${this.topic}`);
+    };
+}
+
+let assignment = classroom(`ayo`);
+
+let homework = {
+    topic: "JS",
+    assignment: assignment,
+};
+
+homework.assignment();
+
+var homework1 = {
+    topic: "JS",
+};
+
+var otherHomework = Object.create(homework1);
+
+let hype = otherHomework;
+
+console.log(hype);
+
+var x = "hello";
+if (x) {
+    // will run!
+}
+
+let la = (x = `hello`) => {
+    if (x === true) {
+        // won't run :(
+        console.log(x);
+    } else {
+        console.log(`no`);
+    }
+};
+
+// let result = prompt("Whats your name", 100);
+
+// alert(prompt("age"));
+
+// let boss = confirm("are you the boss");
+
+// alert(boss);
+
+// confirm("you good");
+
+// let a = prompt("First number?", 1);
+// let b = prompt("Second number?", 2);
+
+// alert(+a + +b); // 12
+
+// let age = prompt("how old are you");
+
+// let message =
+//     +age === 18 || +age <= 30
+//         ? "your allowed in the club"
+//         : age < 18
+//         ? "you are rejected"
+//         : age > 100
+//         ? "your too old"
+//         : "your can come in but your quite old";
+
+// alert(message);
+
+// let company = prompt("Which company created JavaScript?", "");
+
+// company == "Netscape" ? alert("Right!") : alert("Wrong.");
+
+// let question = prompt("what the official name of javascript");
+
+// let message = question.toLowerCase() === "ecma" ? "right" : "you got it wrong";
+
+// alert(message);
+
+// let question = prompt("true or false");
+
+// if (+question > 0) alert(1);
+
+// if (+question < 0) alert(-1);
+
+// if (+question === 0) alert(0);
+
+// let result;
+// let a = 1;
+// let b = 1;
+
+// a + b < 4 ? (result = "below") : (result = "over");
+
+// alert(result);
+
+// let login = prompt("login please");
+
+// login === "Employee"
+//     ? alert("hello")
+//     : login == "Director"
+//     ? alert("Greet message")
+//     : alert("No login");
+
+// let age = 14;
+
+// if (!(age >= 14 && age <= 90));
+
+// if (age < 14 || age > 90);
+
+// let userName = prompt("Who's there?", "");
+
+// if (userName === "admin") {
+//     let password = prompt("Password?");
+
+//     if (password === "themaster") {
+//         alert("Welcome");
+//     } else if (password === "" || password === null) {
+//         alert("Cancelled");
+//     } else {
+//         alert("wrong password");
+//     }
+// } else if (userName === "" || userName === null) {
+//     alert("Canceled");
+// } else {
+//     alert("i don't know you");
+// }
+
+// let i = 1;
+
+// while (i <= 5) {
+//     alert(i);
+//     i++;
+// }
+
+// for (let p = 1; p <= 5; p++) {
+//     alert(p);
+// }
+
+// let sum = 0;
+
+// while (true) {
+//     let value = +prompt("add number", "");
+
+//     if (!value) break; // (*)
+
+//     sum += value;
+// }
+
+// alert(sum);
+
+// for (let n = 0; n < 10; n++) {
+//     if (n % 2 > 0) continue;
+
+//     alert(n);
+// }
+
+let n = 10;
+
+for (; n < 10; n++) {
+    if (n > 5) {
+        alert(n);
+    } else {
+        continue;
+    }
+}

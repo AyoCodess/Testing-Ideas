@@ -1,0 +1,261 @@
+// "use strict";
+
+// // function sing(song, song2) {
+// //     console.log(song);
+// //     console.log(song2);
+// // }
+
+// // sing(`llalalala`, `dfjdfjdjfjd`);
+
+// // function times(a, b) {
+// //     const sum = a * b;
+// //     console.log(sum);
+// //     return sum;
+// // }
+
+// // const news = times(11, 2);
+
+// // function total() {
+// //     console.log(news + 100);
+// //     return news + 100;
+// // }
+
+// // // alert(total());
+
+// // const game = function (a, b) {
+// //     console.log(a, b);
+// // };
+
+// // game(`ayo`, `olanide`);
+
+// // const sum2 = (a, b) => {
+// //     console.log(a + b);
+// // };
+
+// // sum2(1, 1);
+
+// // const name = (a, b) => {
+// //     console.log(`ayo`);
+// // };
+
+// // name();
+
+// // const name2 = function (a, b) {
+// //     console.log(`fumi`);
+// // };
+
+// // name2();
+
+// // let list = [`ayo`, `name`, `fumi`, `game`];
+
+// // console.log(list[3]);
+
+// // console.log(list);
+
+// // list.shift();
+// // console.log(list);
+
+// // list.pop();
+// // console.log(list);
+// // list.push(`drake`);
+// // console.log(list);
+
+// // const map = list.concat([`dam`, `dear`, `miz`, `got`]);
+
+// // console.log(list);
+
+// // console.log(map);
+
+// // const app = map.sort();
+
+// // console.log(app);
+
+// // let user = {
+// //     name: `ayo`,
+// //     dob: `september`,
+// //     car: `tesla`,
+// //     age: 30,
+// //     spells: [`ice`, `fire`, `wind`, `air`],
+// // };
+
+// // console.log(user);
+
+// // console.log(user.age);
+
+// // user.age = 21;
+
+// // console.log(user.age);
+
+// // console.log(user.spells[1]);
+
+// // let users = [
+// //     {
+// //         username: `amy`,
+// //         password: `map`,
+// //     },
+
+// //     {
+// //         username: `mac`,
+// //         password: `deep`,
+// //     },
+
+// //     {
+// //         username: `kev`,
+// //         password: `deep`,
+// //     },
+
+// //     {
+// //         username: `tim`,
+// //         password: `deep`,
+// //     },
+
+// //     {
+// //         username: `jean`,
+// //         password: `deep`,
+// //     },
+// // ];
+
+// // let newsFeed = [
+// //     {
+// //         username: `jean`,
+// //         timeline: `hey man im tired`,
+// //     },
+
+// //     {
+// //         username: `pat`,
+// //         timeline: `i love bitcoin!`,
+// //     },
+// // ];
+
+// // // let userNamePrompt = prompt(`what is your user name`);
+// // // let password = prompt(`what is your password`);
+
+// // // const signIn = function (user, password) {};
+// // // // if (user === users[0].username && password === users[0].password) {
+// // // //     console.log(`Feed: ${newsFeed[0].timeline}`);
+// // // //     console.log(`Feed: ${newsFeed[1].timeline}`);
+// // // // } else {
+// // // //     alert(`wrong credentials, try again`);
+// // // // }
+
+// // // signIn(userNamePrompt, password);
+
+// // // console.log(`---------`);
+
+// // // let todo = [`eat`, `sleep`, `clean`, `get food`, `drive`];
+
+// // // for (let c = 0; c < todo.length; c++) {
+// // //     console.log(todo[c]);
+// // // }
+
+// // // let count = 11;
+// // // while (count > 1) {
+// // //     count--;
+// // //     console.log(count);
+
+// // // todo.forEach(function (todo, i) {
+// // //     console.log(todo, i);
+// // // });
+
+// // const button = document.querySelector(".test");
+// // const buttonContainer = document.querySelector(".btncon");
+// // const userInput = document.querySelector(".input");
+// // const mainHeading = document.querySelector(".main");
+// // const createNewItem = document.createElement("h3");
+// // const selectNewItem = document.querySelector("h3");
+
+// // const greaterThan0 = function () {
+// //     return userInput.value.length;
+// // };
+
+// // const createElementList = function () {
+// //     const div = document.createElement("div");
+// //     const deleteItem = document.createElement("button");
+// //     const deleteButton = document.querySelector(".delete");
+
+// //     createNewItem.appendChild(div);
+// //     div.appendChild(document.createTextNode(userInput.value));
+// //     mainHeading.appendChild(div);
+// //     div.append(deleteItem);
+// //     deleteItem.innerHTML = `Delete`;
+// //     deleteItem.classList.add("delete");
+// //     userInput.value = "";
+// // };
+
+// // const deleteListElement = function () {
+// //     if (element.target === "delete") {
+// //         element.target.parentElement.remove();
+// //     }
+// // };
+
+// // deleteListElement();
+
+// // const clickEvent = function () {
+// //     if (greaterThan0() > 0) {
+// //         createElementList();
+// //     }
+// // };
+
+// // const enterPressed = function (event) {
+// //     if (greaterThan0() > 0 && event.key === "Enter") {
+// //         createElementList();
+// //     }
+// // };
+
+// // button.addEventListener("click", clickEvent);
+// // buttonContainer.addEventListener("keypress", enterPressed);
+
+// // console.log(selectNewItem);
+
+// let a = "ayo";
+// let b = "dave";
+// let c = `dan`;
+// const obj = { a, b, c };
+
+// console.log(obj);
+
+// const add = function (a, b) {
+//     a + b;
+// };
+
+// const add2 = (a, b) => a + b;
+
+// console.log(add2(5, 10));
+
+// const person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     age: 50,
+//     eyeColor: "blue",
+// };
+
+// const { firstName, lastName, age, eyeColor } = person;
+
+// console.log(firstName);
+
+// console.log(lastName);
+
+// console.log(eyeColor);
+
+// // curried
+
+// const curried = (a) => (b) => a * b;
+
+// console.log(curried);
+
+// console.log(curried(10));
+// console.log(curried(10)(10));
+
+// /// Compose
+
+// // the act of putting 2 functions together to form a third function where the output of one function is the input of the other.
+
+// console.log(`------ break -------`);
+
+// const compose = (fn1, fn2) => (arg) => fn1(fn2(arg));
+
+// /// javascript parces code from right to left, but reads and from left to right. so it will replace arg with 10, then call sum on 1o, get 11, then call fn1 which is sum on 11 and get 12.
+
+// const sum22 = (num) => num + 1;
+
+// console.log(compose(sum22, sum22)(10));

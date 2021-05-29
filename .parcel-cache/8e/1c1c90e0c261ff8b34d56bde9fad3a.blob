@@ -1,0 +1,22 @@
+"use strict";
+
+console.log(`hello world`);
+console.log(`hey`);
+
+console.log(3 + 4);
+
+console.log(3 === 3);
+
+const hello = "i am going home";
+
+console.log(hello);
+
+function ayo(a, b) {
+    console.log(a + b);
+}
+
+ayo(1, 10);
+
+const ayo2 = (a + b) => console.log(a + b);
+
+console.log(ayo2);

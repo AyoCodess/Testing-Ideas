@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Robot Page</title>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="9febb7eb3f4b874d6c90fd590de44225">
+	<link href="30f2288ff8887bad56b99ef11fd36ac9" rel="stylesheet">
+</head>
+<body>
+
+	<div class="nav ">
+    <ul>
+      <li class="nav__item"><a href="081c0d5fa4b06343e48aca3096062c86">Home</a></li>
+      <li class="nav__item"><a href="af5381b34e5a3b12ea3a48ba3b6045fe">About</a></li>
+      <li class="nav__item"><a href="c875786806c29976a07bd089ab4e5a06">Login</a></li>
+      <li class="nav__item"><a href="dbd3953a8a464a40b47819b20f5f1d61">Gallery</a></li>
+      <li class="nav__item"><a href="a779d39d5583996992988bf6859cab71">Robot</a></li>
+      <li class="nav__item"><a href="f8620c9235e3d978597b742e41a3cdc2">Bootstrap</a></li>
+      <li class="nav__item"><a href="1893e88f95aee4c3ff8f71f65e9d7bfb">Startup</a></li>
+    </ul>
+  </div>
+	
+		<h1>Robot Friend Desktop Only Animation</h1>
+		<div class="container-robot">
+		<div class="robots">
+			<div class="android">
+				<div class="head">
+					<div class="eyes">
+						<div class="left_eye"></div>
+						<div class="right_eye"></div>
+					</div>
+				</div>
+				<div class="upper_body">
+					<div class="left_arm"></div>
+					<div class="torso"></div>
+					<div class="right_arm"></div>
+				</div>
+				<div class="lower_body">
+					<div class="left_leg"></div>
+					<div class="right_leg"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html><script src="c25935e132613287dd8999ea545f5dc1"></script>

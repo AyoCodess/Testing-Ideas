@@ -1,0 +1,22 @@
+"use strict";
+
+function sing(song, song2) {
+    console.log(song);
+    console.log(song2);
+}
+
+sing(`llalalala`, `dfjdfjdjfjd`);
+
+function times(a, b) {
+    const sum = a * b;
+    console.log(sum);
+    return sum;
+}
+
+const news = times(11, 2);
+
+function total() {
+    console.log(news + 100);
+}
+
+total();
