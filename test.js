@@ -1689,7 +1689,6 @@ const object = {
     hey: mac,
 };
 
-console.log(hey);
 // *
 //!
 // ?
