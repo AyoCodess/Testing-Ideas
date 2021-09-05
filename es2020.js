@@ -47,3 +47,7 @@ console.log(null ?? 'hellooo')
 console.log(null || 'hellooo')
 console.log((false || null) ?? 'hellooo')
 console.log(null ?? (false || 'hellooo'))
+
+console.log()
+
+const const 
